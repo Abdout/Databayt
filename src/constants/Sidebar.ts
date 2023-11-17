@@ -1,6 +1,13 @@
 import React from "react";
 
-export const SidebarData = [
+interface SidebarItem {
+  title: string;
+  path: string;
+  subNav?: SidebarItem[];
+}
+
+export const SidebarData: SidebarItem[] = [
+
   {
     title: "Relay",
     path: "#",
