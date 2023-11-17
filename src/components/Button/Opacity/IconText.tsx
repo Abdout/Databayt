@@ -1,5 +1,6 @@
 "use client";
 import useOpacity from "@/hook/Opacity";
+import Image from "next/image";
 
 
 const DropButton = (props: {
@@ -13,7 +14,7 @@ const DropButton = (props: {
         className={`${props.activeClass} flex  gap-1`}
         onClick={props.onClick}
       >
-        <img src={props.src} width={35} height={35} alt={props.alt} />
+        <Image src={props.src} width={35} height={35} alt={props.alt} />
         <h1 className="text-[11px] font-normal">{props.alt}</h1>
       </button>
     );
