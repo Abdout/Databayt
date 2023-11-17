@@ -7,7 +7,12 @@ const Conribute = () => {
   return (
     <div className="flex flex-col gap-6">
       <CentiText text="Contibute" />
-      <div className="flex gap-4">
+      <p className="text-[14px] -mt-2 font-light tracking-wider">
+        You may track the ongoing development by reviewing the Design, Source
+        Code and Discussion on Figma, GitHub, Discord, and
+        WhatsApp, respectively.
+      </p>
+      <div className="flex gap-5 items-center ">
         <MicroIcon
           src="/figma.png"
           alt="Figma"
@@ -23,17 +28,17 @@ const Conribute = () => {
         <MicroIcon
           src="/discord.png"
           alt="Discord"
-          path="https://www.figma.com/community/file/1303390002899241380/databayt"
+          path="https://discord.gg/VQaGcGgJ"
         />
 
         <MicroIcon
           src="/whatsapp.png"
-          alt="Discord"
-          path="https://www.figma.com/community/file/1303390002899241380/databayt"
+          alt="Whatsapp"
+          path="https://chat.whatsapp.com/Jnntf6LZWQc1Cjzxn0tSwc"
         />
       </div>
       <CentiText text="Skill" />
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center">
         <MicroIcon
           src="/typescript.png"
           alt="Typescript"
@@ -57,6 +62,12 @@ const Conribute = () => {
           alt="Express"
           path="https://www.figma.com/community/file/1303390002899241380/databayt"
         />
+
+        <MicroIcon
+          src="/git.jpg"
+          alt="Express"
+          path="https://www.figma.com/community/file/1303390002899241380/databayt"
+        />
       </div>
 
       <div className="flex gap-4">
@@ -65,61 +76,117 @@ const Conribute = () => {
           alt="MongoDB"
           path="https://www.figma.com/community/file/1303390002899241380/databayt"
         />
+        <MicroIcon
+          src="/node.png"
+          alt="MongoDB"
+          path="https://www.figma.com/community/file/1303390002899241380/databayt"
+        />
+
+        <div className="pt-2">
+        <MicroIcon
+          src="/tailwind.png"
+          alt="MongoDB"
+          path="https://www.figma.com/community/file/1303390002899241380/databayt"
+          />
+          </div>
+        
+        <div className="w-[45px] h-[45px]">
+          <MicroIcon
+            src="/webassembly.jpg"
+            alt="Webassembly"
+            path="https://github.com/Abdout/Databayt"
+          />
+        </div>
 
         <MicroIcon
           src="/rust.svg"
           alt="Rust"
           path="https://github.com/Abdout/Databayt"
         />
-        
-        </div>
-        <div className="text-[14px]">
+      </div>
+      <div className="text-[14px]">
         <CentiText text="Block" />
         <div className="flex gap-4">
-        <div className="border border-black p-2 mt-3 ">Forntend</div>
-        <div className="border border-black p-2 mt-3 ">Backend</div>
-        <div className="border border-black p-2 mt-3 ">API</div>
-        <div className="border border-black p-2 mt-3 ">Database</div>
+          <div className="bg-black text-[#FCFCFC] font-medium p-2 mt-3 ">
+            Forntend
+          </div>
+          <div className="bg-black text-[#FCFCFC] font-mediump p-2 mt-3 ">
+            Backend
+          </div>
+          <div className="bg-black text-[#FCFCFC] font-medium p-2 mt-3 ">
+            API
+          </div>
+          <div className="bg-black text-[#FCFCFC] font-medium p-2 mt-3 ">
+            Database
+          </div>
+        </div>
+        <div>
+          <hr className="border-t-1 border-black mr-3 my-2 mt-3" />
         </div>
 
         <div className="flex gap-4">
-        <div className="border border-black p-2 mt-3 ">Auth</div>
-        <div className="border border-black p-2 mt-3 ">Memberbase</div>
-        <div className="border border-black p-2 mt-3 opacity-60">Search</div>
-        <div className="border border-black p-2 mt-3 opacity-60">SEO</div>
+          <div className="border border-black p-2 mt-3 ">Auth</div>
+          <div className="border border-black p-2 mt-3 ">Memberbase</div>
+          <div className="border border-black p-2 mt-3 opacity-60">Search</div>
+          <div className="border border-black p-2 mt-3 opacity-60">SEO</div>
         </div>
 
         <div className="flex gap-4">
-        <div className="border border-black p-2 mt-3 ">Responsive</div>
-        <div className="border border-black p-2 mt-3 ">Animation</div>
-        <div className="border border-black p-2 mt-3 ">Hook</div>
-        <div className="border border-black p-2 mt-3 ">Icon</div>
-        
-        
+          <div className="border border-black p-2 mt-3 opacity-60">
+            Responsive
+          </div>
+          <div className="border border-black p-2 mt-3 opacity-60">
+            Animation
+          </div>
+          <div className="border border-black p-2 mt-3 ">Hook</div>
+          <div className="border border-black p-2 mt-3 ">Icon</div>
         </div>
 
         <div className="flex gap-4">
-        <div className="border border-black p-2 mt-3 ">Desgin</div>
-        <div className="border border-black p-2 mt-3 ">Plugin</div>
-        <div className="border border-black p-2 mt-3 ">Docs</div>
-        <div className="border border-black p-2 mt-3 ">Merging tech</div>
+          <div className="border border-black p-2 mt-3 ">Desgin</div>
+          <div className="border border-black p-2 mt-3 ">Plugin</div>
+          <div className="border border-black p-2 mt-3 ">Library</div>
+          <div className="border border-black p-2 mt-3 opacity-60">Docs</div>
         </div>
 
         <div className="flex gap-4">
-        <div className="border border-black p-2 mt-3 opacity-60">optimize</div>
-        <div className="border border-black p-2 mt-3 opacity-60">Metadata</div>
-        <div className="border border-black p-2 mt-3 opacity-60">Test</div>
-        <div className="border border-black p-2 mt-3 opacity-60">Deploy</div>
+          <div className="border border-black p-2 mt-3 opacity-60">
+            optimize
+          </div>
+          <div className="border border-black p-2 mt-3 opacity-60">
+            Metadata
+          </div>
+          <div className="border border-black p-2 mt-3 opacity-60">Test</div>
+          <div className="border border-black p-2 mt-3 opacity-60">Deploy</div>
         </div>
-
 
         <div className="flex gap-4">
-        <div className="border border-black p-2 mt-3 opacity-60">AI</div>
-        <div className="border border-black p-2 mt-3 opacity-60">Blochchain</div>
+          <div className="border border-black p-2 mt-3 opacity-60">AI</div>
+          <div className="border border-black p-2 mt-3 opacity-60">
+            Blochchain
+          </div>
         </div>
 
-          
+        <div className="text-[14px] py-2 mt-2 tracking-wider">
+          <CentiText text="Road map" />
+          <div className="text-[15px] font-meduim mt-2">
+            <h1>Phase one</h1>
+            <h1>Set point: Task management</h1>
+            <h1>Inspired by: Monday</h1>
+            <h1>Step:</h1>
+          </div>
 
+          <div className="text-[15px] p-2 py-3 px-6 mb-8 space-y-1 text-blue-800 cursor-pointer tracking-wide">
+            <h1>1. Desgin</h1>
+            <h1>2. Database </h1>
+            <h1>3. Authentication</h1>
+            <h1>4. Task CRUD </h1>
+            <h1>5. Task view</h1>
+            <h1>6. User management</h1>
+            <h1>7. Collaboration feature </h1>
+            <h1>8. Notification </h1>
+          </div>
+        </div>
       </div>
     </div>
   );

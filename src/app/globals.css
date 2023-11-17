@@ -9,3 +9,11 @@ html {
     padding: 24px;
   }
 
+  .group {
+    opacity: 0.6; /* Set the desired opacity for the hero */
+  }
+  
+  .group > * {
+    opacity: 1; /* Override the opacity for the children to 100% */
+  }
+

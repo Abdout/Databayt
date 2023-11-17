@@ -1,4 +1,4 @@
-import Header from "@/components/Nav/Header";
+import Header from "@/components/Header/Header";
 import Read from "@/components/Text/Read";
 import Hero from "@/components/Hero/Home";
 import Team from "@/components/Card/Team";
@@ -16,8 +16,6 @@ export default function Home() {
   return (
     <div className="space-y-4">
       <Header />
-      <CentiInupt placeholder="Search" />
-      <Mobile />
       <Hero />
       <Read />
       <div className="text-center pt-6">

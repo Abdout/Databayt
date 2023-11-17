@@ -1,7 +1,5 @@
 import Tools from "@/components/Card/Tool";
-import Header from "@/components/Nav/Header";
-import Mobile from "@/components/Nav/Mobile";
-import Search from "@/components/Input/Nano";
+import Header from "@/components/Header/Header";
 import toolData from "@/constants/tool";
 import React from "react";
 
@@ -9,8 +7,7 @@ const Tool = () => {
   return (
     <div className="space-y-4">
       <Header />
-      <Search />
-      <Mobile />
+     
       <p className="text-[11.5px] tracking-wide font-light">
         The most magical part of the Harry Potter books, is that they eventually
         used the skills they learned at school

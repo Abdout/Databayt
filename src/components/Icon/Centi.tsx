@@ -1,22 +1,19 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
-const NanoIcon = (props: {
+const CentiIcon = (props: {
   src: string;
   alt: string;
-  path: string;
+  
 }) => {
   return (
-    <Link href={props.path}>
         <Image
           src={props.src}
-          width={25}
-          height={25}
+          width={150}
+          height={150}
           alt={props.alt}
         />
-    </Link>
   );
 };
 
-export default NanoIcon;
+export default CentiIcon;
