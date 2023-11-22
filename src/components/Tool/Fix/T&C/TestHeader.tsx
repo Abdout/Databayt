@@ -1,8 +1,8 @@
 import React from 'react'
-import NanoIcon from '../Icon/Nano';
-import CentiText from '../Text/Centi';
-import CentiInupt from '../Input/Centi';
-import Side from '../Nav/Side';
+import NanoIcon from '../../../Atom/Icon/Nano';
+import CentiText from '../../../Atom/Text/Centi';
+import CentiInupt from '../../../Atom/Input/Centi';
+import Side from '../../../Nav/Side';
 
 const TestHeader = () => {
   return (

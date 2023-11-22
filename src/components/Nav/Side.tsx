@@ -3,9 +3,9 @@
 import React, { useState, useEffect, useRef, MouseEvent } from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
-import FileOpacity from "../Button/Opacity/File";
-import VoltOpacity from "../Button/Opacity/Volt";
-import DropOpacity from "../Button/Opacity/Text";
+import FileOpacity from "../Atom/Button/Opacity/File";
+import VoltOpacity from "../Atom/Button/Opacity/Volt";
+import DropOpacity from "../Atom/Button/Opacity/Text";
 
 const Side = () => {
   const [open, setOpen] = useState(false);

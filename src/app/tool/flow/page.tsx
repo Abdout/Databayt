@@ -9,7 +9,7 @@ const Flow = () => {
   return (
     <div>
        
-       <Sidebar/>
+       home
     </div>
   )
 }

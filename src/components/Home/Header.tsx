@@ -1,9 +1,9 @@
 "use client";
-import Databayt from "../Text/Databayt";
-import Burger from "../Nav/Burger";
-import Nav from "../Nav/Nav";
-import CentiInupt from "../Input/Centi";
-import Mobile from "../Nav/Mobile";
+import Databayt from "../Atom/Text/Databayt";
+import Burger from "./Burger";
+import Nav from "./Nav";
+import CentiInupt from "../Atom/Input/Centi";
+import Mobile from "./Mobile";
 
 const Header = () => {
   return (

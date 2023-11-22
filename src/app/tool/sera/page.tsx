@@ -1,7 +1,7 @@
-import Profile from '@/components/Card/Profile'
-import CentiIcon from '@/components/Icon/Centi'
-import CentiText from '@/components/Text/Centi'
-import MicroText from '@/components/Text/Micro'
+import Profile from '@/components/Tool/Sera/ProfileCard'
+import CentiIcon from '@/components/Atom/Icon/Centi'
+import CentiText from '@/components/Atom/Text/Centi'
+import MicroText from '@/components/Atom/Text/Micro'
 import React from 'react'
 
 const Sera = () => {

@@ -1,5 +1,5 @@
 
-import Header from '@/components/Header/Header'
+import Header from '@/components/Home/Header'
 import React from 'react'
 
 const Blog = () => {

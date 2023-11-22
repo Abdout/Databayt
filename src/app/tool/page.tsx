@@ -1,5 +1,5 @@
-import Tools from "@/components/Card/Tool";
-import Header from "@/components/Header/Header";
+import Tools from "@/components/Tool/ToolCard";
+import Header from "@/components/Home/Header";
 import toolData from "@/constants/tool";
 import React from "react";
 

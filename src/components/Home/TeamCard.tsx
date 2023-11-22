@@ -1,8 +1,8 @@
 import React from "react";
 // import Image from './Image'
 import Image from "next/image";
-import MicroIcon from "../Icon/Micro";
-import MicroText from "../Text/Micro";
+import MicroIcon from "../Atom/Icon/Micro";
+import MicroText from "../Atom/Text/Micro";
 
 const Team = () => {
   return (

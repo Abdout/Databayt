@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from "framer-motion";
-import homeNav from '@/constants/nav';
+import homeNav from '@/constants/homeNav';
 
 const Burger = () => {
     const [open, setOpen] = useState(false);

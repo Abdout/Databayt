@@ -1,6 +1,6 @@
-import Tool from '@/components/Hero/Tool'
-import Back from '@/components/Icon/Back'
-import ToolIcon from '@/components/Icon/Tool'
+import Tool from '@/components/Tool/Hero'
+import Back from '@/components/Atom/Icon/Back'
+import ToolIcon from '@/components/Atom/Icon/Tool'
 import React from 'react'
 
 const Seek = () => {

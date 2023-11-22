@@ -1,15 +1,15 @@
-import Header from "@/components/Header/Header";
-import Read from "@/components/Text/Read";
-import Hero from "@/components/Hero/Home";
-import Team from "@/components/Card/Team";
-import Mobile from "@/components/Nav/Mobile";
-import Footer from "@/components/Nav/Footer";
-import CentiInupt from "@/components/Input/Centi";
-import CentiText from "@/components/Text/Centi";
-import Contributor from "@/components/Card/Contributor";
-import Sponser from "@/components/Card/Sponser";
-import MicroText from "@/components/Text/Micro";
-import MicroIcon from "@/components/Icon/Micro";
+import Header from "@/components/Home/Header";
+import Read from "@/components/Home/ReadMore";
+import Hero from "@/components/Home/Hero";
+import Team from "@/components/Home/TeamCard";
+import Mobile from "@/components/Home/Mobile";
+import Footer from "@/components/Home/Footer";
+import CentiInupt from "@/components/Atom/Input/Centi";
+import CentiText from "@/components/Atom/Text/Centi";
+import Contributor from "@/components/Home/ContributorCard";
+import Sponser from "@/components/Home/SponserCard";
+import MicroText from "@/components/Atom/Text/Micro";
+import MicroIcon from "@/components/Atom/Icon/Micro";
 
 export default function Home() {
   

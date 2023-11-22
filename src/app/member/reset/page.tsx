@@ -1,7 +1,7 @@
-import CentiButton from "@/components/Button/Centi";
-import CentiInupt from "@/components/Input/Centi";
-import CentiText from "@/components/Text/Centi";
-import MicroText from "@/components/Text/Micro";
+import CentiButton from "@/components/Atom/Button/Centi";
+import CentiInupt from "@/components/Atom/Input/Centi";
+import CentiText from "@/components/Atom/Text/Centi";
+import MicroText from "@/components/Atom/Text/Micro";
 import React from "react";
 
 const Reset = () => {

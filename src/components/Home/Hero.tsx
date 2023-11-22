@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button/Milli";
+import Button from "../Atom/Button/Milli";
 
 const Hero = () => {
   return (

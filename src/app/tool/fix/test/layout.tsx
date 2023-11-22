@@ -1,4 +1,4 @@
-import TestHeader from '@/components/Header/TestHeader'
+import TestHeader from '@/components/Tool/Fix/T&C/TestHeader'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
