@@ -2,7 +2,7 @@ import React from 'react'
 import NanoIcon from '../../../Atom/Icon/Nano';
 import CentiText from '../../../Atom/Text/Centi';
 import CentiInupt from '../../../Atom/Input/Centi';
-import Side from '../../../Nav/Side';
+
 
 const TestHeader = () => {
   return (
@@ -16,7 +16,7 @@ const TestHeader = () => {
 
       <div>
         <div>
-          <Side />
+          
         </div>
       </div>
     </div>
