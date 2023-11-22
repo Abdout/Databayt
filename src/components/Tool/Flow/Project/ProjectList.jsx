@@ -6,7 +6,7 @@ import DeleteProject from "@/components/Tool/Flow/Project/DeleteProject";
 
 const getTopics = async () => {
   try {
-    const res = await fetch("/api/topics", {
+    const res = await fetch("https://databayt.org/api/topics", {
       cache: "no-store",
     });
 

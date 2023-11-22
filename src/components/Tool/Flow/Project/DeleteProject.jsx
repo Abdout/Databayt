@@ -8,7 +8,7 @@ export default function DeleteProject({ id }) {
     const confirmed = confirm("Are you sure?");
 
     if (confirmed) {
-      const res = await fetch(`/topics?id=${id}`, {
+      const res = await fetch(`https://databayt.org/api/topics?id=${id}`, {
         method: "DELETE",
       });
 

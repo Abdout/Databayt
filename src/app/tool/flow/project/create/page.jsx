@@ -17,7 +17,7 @@ const Create = () => {
     }
 
     try {
-      const res = await fetch("/api/topics", {
+      const res = await fetch("https://databayt.org/api/topics", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
