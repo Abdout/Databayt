@@ -2,7 +2,7 @@ import EditProject from "@/components/Tool/Flow/Project/EditProject";
 
 const getTopicById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
+    const res = await fetch(`http://databayt.com/api/topics/${id}`, {
       cache: "no-store",
     });
 

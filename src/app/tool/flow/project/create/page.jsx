@@ -1,5 +1,4 @@
 "use client";
-import CentiInupt from "@/components/Atom/Input/Centi";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -18,7 +17,7 @@ const Create = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/topics", {
+      const res = await fetch("http://databayt.com/api/topics", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
