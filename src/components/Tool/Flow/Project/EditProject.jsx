@@ -12,7 +12,7 @@ export default function EditProject({ id, title, description }) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
+      const res = await fetch(`http://databayt.com/api/topics/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
