@@ -25,7 +25,7 @@ const ProjectList = async () => {
   return (
     <>
       {topics.map((t) => (
-        <div className="flex flex-col items-start border p-4 space-y-2">
+        <div key={t._id} className="flex flex-col items-start border p-4 space-y-2">
           <div className="flex items-center gap-4 ">
             <MicroIcon src="/github.png" alt="m" path="" />
             <div className="flex flex-col">
@@ -45,9 +45,6 @@ const ProjectList = async () => {
                 path={`/tool/flow/project/edit/${t._id}`}
               />
             </button>
-            {/* <Link href={`/tool/flow/project/edit/${t._id}`}>
-              <HiPencilAlt size={24} />
-            </Link> */}
             <DeleteProject id={t._id} />
           </div>
         </div>
