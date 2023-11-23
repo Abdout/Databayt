@@ -1,5 +1,4 @@
 import MicroIcon from "@/components/Atom/Icon/Micro";
-import Contribute from "@/components/Try/Contribute";
 import CentiText from "@/components/Atom/Text/Centi";
 import React from "react";
 
@@ -16,7 +15,7 @@ const Conribute = () => {
         <MicroIcon
           src="/figma.png"
           alt="Figma"
-          path="https://www.figma.com/file/2IL6tuiu2hkArwGY2H73A2/Databayt?type=design&node-id=0%3A1&mode=design&t=VisgTckEqR1EXHEj-1"
+          path="https://www.figma.com/file/2IL6tuiu2hkArwGY2H73A2/Databayt?type=design&node-id=919%3A1332&mode=design&t=QFcofhh6CIgTp9Pe-1"
         />
 
         <MicroIcon

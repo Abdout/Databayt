@@ -9,7 +9,7 @@ import { SideNavItem } from '@/type/SideNavItem';
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
     title: 'Project',
-    path: '/tool/flow/project',
+    path: '#',
     // icon: <Icon icon="mdi-light:home" />,
     
   },
