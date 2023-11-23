@@ -1,26 +1,26 @@
-// "use client";
+"use client";
 
-// import { useRouter } from "next/navigation";
-// import NanoIcon from "../../../Atom/Icon/Nano";
-// export default function DeleteProject({ id }) {
-//   const router = useRouter();
-//   const removeTopic = async () => {
-//     const confirmed = confirm("Are you sure?");
+import { useRouter } from "next/navigation";
+import NanoIcon from "../../../Atom/Icon/Nano";
+export default function DeleteProject({ id }) {
+  const router = useRouter();
+  const removeTopic = async () => {
+    const confirmed = confirm("Are you sure?");
 
-//     if (confirmed) {
-//       const res = await fetch(`https://databayt.org/api/topics?id=${id}`, {
-//         method: "DELETE",
-//       });
+    if (confirmed) {
+      const res = await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+        method: "DELETE",
+      });
 
-//       if (res.ok) {
-//         router.refresh();
-//       }
-//     }
-//   };
+      if (res.ok) {
+        router.refresh();
+      }
+    }
+  };
 
-//   return (
-//     <button onClick={removeTopic} className="text-red-400">
-//       <NanoIcon src="/delete.png" alt="" path="" />
-//     </button>
-//   );
-// }
+  return (
+    <button onClick={removeTopic} className="text-red-400">
+      <NanoIcon src="/delete.png" alt="" path="" />
+    </button>
+  );
+}
