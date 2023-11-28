@@ -11,7 +11,7 @@ const Tool = (props: {
 }) => {
   return (
     <Link href={props.path}>
-      <div className="w-full h-[140px] border border-gray p-5 hover:border-black hover:border-2">
+      <div className="w-full h-[140px] border border-gray p-5 hover:border-black hover:border">
         <div className="flex gap-3 items-center">
           <div className="flex items-center justify-center w-[60px] h-[40px] bg-black ">
             <h1 className="text-white text-justify text-[16px] font-medium tracking-wide">{props.title}</h1>

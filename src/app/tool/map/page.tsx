@@ -1,6 +1,6 @@
-import Tool from "@/components/Tool/Hero";
-import Back from "@/components/Atom/Icon/Back";
-import ToolIcon from "@/components/Atom/Icon/Tool";
+import Tool from "@/components/tool/hero";
+import Back from "@/components/atom/icon/back";
+import ToolIcon from "@/components/atom/icon/tool";
 import React from "react";
 
 const Map = () => {

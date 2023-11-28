@@ -1,11 +1,10 @@
-import MicroIcon from "@/components/Atom/Icon/Micro";
-import CentiText from "@/components/Atom/Text/Centi";
+import MicroIcon from "@/components/atom/icon/micro";
 import React from "react";
 
 const Conribute = () => {
   return (
     <div className="flex flex-col gap-6">
-      <CentiText text="Contibute" />
+      <h1>Contribute</h1>
       <p className="text-[14px] -mt-2 font-light tracking-wider">
         You may track the ongoing development by reviewing the Design, Source
         Code and Discussion on Figma, GitHub, Discord, and
@@ -36,7 +35,7 @@ const Conribute = () => {
           path="https://chat.whatsapp.com/Jnntf6LZWQc1Cjzxn0tSwc"
         />
       </div>
-      <CentiText text="Skill" />
+      <h1>Skill</h1>
       <div className="flex gap-4 items-center">
         <MicroIcon
           src="/typescript.png"
@@ -104,7 +103,7 @@ const Conribute = () => {
         />
       </div>
       <div className="text-[14px]">
-        <CentiText text="Block" />
+        <h1>Block</h1>
         <div className="flex gap-4">
           <div className="bg-black text-[#FCFCFC] font-medium p-2 mt-3 ">
             Forntend
@@ -131,7 +130,7 @@ const Conribute = () => {
         </div>
 
         <div className="flex gap-4">
-          <div className="border border-black p-2 mt-3 opacity-60">
+          <div className="border border-black p-2 mt-3">
             Responsive
           </div>
           <div className="border border-black p-2 mt-3 opacity-60">
@@ -150,16 +149,17 @@ const Conribute = () => {
 
         <div className="flex gap-4">
           <div className="border border-black p-2 mt-3 opacity-60">
-            optimize
+            Optimize
           </div>
           <div className="border border-black p-2 mt-3 opacity-60">
             Metadata
           </div>
           <div className="border border-black p-2 mt-3 opacity-60">Test</div>
-          <div className="border border-black p-2 mt-3 opacity-60">Deploy</div>
+          <div className="border border-black p-2 mt-3 ">Deploy</div>
         </div>
 
         <div className="flex gap-4">
+        <div className="border border-black p-2 mt-3 opacity-60">Secuirty</div>
           <div className="border border-black p-2 mt-3 opacity-60">AI</div>
           <div className="border border-black p-2 mt-3 opacity-60">
             Blochchain
@@ -167,10 +167,10 @@ const Conribute = () => {
         </div>
 
         <div className="text-[14px] py-2 mt-2 tracking-wider">
-          <CentiText text="Road map" />
+        <h1>Road map</h1>
           <div className="text-[15px] font-meduim mt-2">
             <h1>Phase one</h1>
-            <h1>Set point: Task management</h1>
+            <h1>Set point: Dashboard</h1>
             <h1>Inspired by: Monday</h1>
             <h1>Step:</h1>
           </div>
@@ -182,8 +182,7 @@ const Conribute = () => {
             <h1>4. Task CRUD </h1>
             <h1>5. Task view</h1>
             <h1>6. User management</h1>
-            <h1>7. Collaboration feature </h1>
-            <h1>8. Notification </h1>
+            <h1>7. Notification </h1>
           </div>
         </div>
       </div>

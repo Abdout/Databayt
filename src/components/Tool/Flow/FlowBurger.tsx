@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
-import homeNav from "@/constants/homeNav";
 import flowNav from "@/constants/flowNav";
-import CentiText from "@/components/Atom/Text/Centi";
+
 
 const FlowBurger = () => {
   const [open, setOpen] = useState(false);
@@ -26,7 +25,8 @@ const FlowBurger = () => {
           >
             <div className="flex items-center gap-2 p-8">
                       <div className="rounded-full w-4 h-4 bg-black"></div>
-                      <CentiText text="Brand" />
+                      
+                      <h1>Brand</h1>
                     </div>
             <ul className="grid gap-2">
               {flowNav.map((route, idx) => {

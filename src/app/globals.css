@@ -3,17 +3,43 @@
 @tailwind utilities;
 
 html {
-    width: 100%;
-    height: 100%;
-    background-color: #FCFCFC;
-    padding: 24px;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #fcfcfc;
+  padding: 24px;
+}
 
-  .group {
-    opacity: 0.6; /* Set the desired opacity for the hero */
-  }
-  
-  .group > * {
-    opacity: 1; /* Override the opacity for the children to 100% */
-  }
+h1 {
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
 
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.98px;
+}
+
+h4 {
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.84px;
+}
+
+p {
+  font-size: 15px;
+}

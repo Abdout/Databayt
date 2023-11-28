@@ -1,6 +1,6 @@
-import CentiButton from "@/components/Atom/Button/Centi";
-import CentiInupt from "@/components/Atom/Input/Centi";
-import MicroText from "@/components/Atom/Text/Micro";
+import CentiButton from "@/components/atom/button/centi";
+import CentiInupt from "@/components/atom/input/Centi";
+import Link from "next/link";
 import React from "react";
 
 const Join = () => {
@@ -9,13 +9,16 @@ const Join = () => {
       <CentiInupt placeholder="Name" />
       <CentiInupt placeholder="Phone" />
       <CentiInupt placeholder="Password" />
-      <MicroText text="Between 7 to 28 characters" />
+      <p>Between 7 to 28 characters</p>
       <CentiButton placeholder="Join" />
-      <MicroText
-        text="Already on Databayt?"
-        span="  Log in"
-        link="/member/login"
-      />
+      <p>
+        Already on Databayt?
+        <span>
+          <Link href="/member/login">
+            Log in
+          </Link>
+        </span>
+      </p>
     </div>
   );
 };

@@ -1,12 +1,13 @@
-
-import Header from '@/components/Home/Header'
-import React from 'react'
+import Header from "@/components/layout/header";
+import React from "react";
 
 const Blog = () => {
   return (
-    <Header />
-    
-  )
-}
+    <div>
+      <Header />
+      <h1>Blog</h1>
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;

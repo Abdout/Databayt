@@ -2,10 +2,6 @@ import { Icon } from '@iconify/react';
 import { SideNavItem } from '@/type/SideNavItem';
 
 
-
-
-
-
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
     title: 'Project',

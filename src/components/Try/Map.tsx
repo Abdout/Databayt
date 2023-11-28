@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MicroIcon from "../Atom/Icon/Micro";
+import MicroIcon from "../atom/icon/micro";
 
 const Map = () => {
   const [active, setActive] = useState<boolean>(false);

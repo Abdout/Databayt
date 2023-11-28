@@ -1,5 +1,6 @@
-import DashHeader from "@/components/Tool/Flow/DashHeader";
-import DashSide from "@/components/Tool/Flow/DashSide";
+import DashHeader from "@/components/tool/Flow/DashHeader";
+import DashSide from "@/components/tool/Flow/DashSide";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 

@@ -1,19 +1,19 @@
 "use client";
-import React, { useState } from 'react';
-import { Squeeze as Hamburger } from 'hamburger-react';
+import React, { useState } from "react";
+import { Squeeze as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
-import homeNav from '@/constants/homeNav';
+import homeNav from "@/constants/homeNav";
 
 const Burger = () => {
-    const [open, setOpen] = useState(false);
-  
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className='md:hidden'>
-      <div className='absolute top-[-0.4rem] right-[-0.8rem] z-10'>
-        <Hamburger size={20} distance='lg' toggled={open} toggle={setOpen}/>
+    <div className="">
+      <div className="absolute top-[-0.15rem] right-[-0.8rem] z-10">
+        <Hamburger size={20} distance="lg" toggled={open} toggle={setOpen} />
       </div>
-        
-        <AnimatePresence>
+
+      <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -60,5 +60,4 @@ const Burger = () => {
   );
 };
 
-
-export default Burger
+export default Burger;
