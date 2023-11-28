@@ -1,4 +1,4 @@
-import Tools from "@/components/tool/ToolCard";
+import Tools from "@/components/tool/toolcard";
 import Header from "@/components/layout/header";
 import toolData from "@/constants/tool";
 import React from "react";

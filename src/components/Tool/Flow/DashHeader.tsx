@@ -1,7 +1,7 @@
 import React from "react";
 
 import NanoIcon from "../../atom/icon/nano";
-import CentiInupt from "../../atom/input/Centi";
+import CentiInupt from "../../atom/input/centi";
 import FlowBurger from "./FlowBurger";
 
 

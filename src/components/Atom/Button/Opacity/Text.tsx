@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import useOpacity from "@/hook/Opacity";
+import useOpacity from "@/hook/opacity";
 import { SidebarData } from "@/constants/Sidebar";
 import Link from "next/link";
 

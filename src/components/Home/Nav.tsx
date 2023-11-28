@@ -1,7 +1,7 @@
 import { navLink } from "@/constants/link";
 import Link from "next/link";
 import React from "react";
-import Burger from "./Burger";
+import Burger from "./burger";
 import Image from "next/image";
 
 const Nav = () => {

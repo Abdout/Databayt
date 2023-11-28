@@ -1,5 +1,5 @@
 import CentiButton from "@/components/atom/button/centi";
-import CentiInupt from "@/components/atom/input/Centi";
+import CentiInupt from "@/components/atom/input/centi";
 import React from "react";
 
 const Reset = () => {

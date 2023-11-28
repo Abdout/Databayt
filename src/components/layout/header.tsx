@@ -1,7 +1,7 @@
 "use client";
 import Nav from "../home/nav";
 import Mobile from "../home/mobile";
-import CentiInupt from "../atom/input/Centi";
+import CentiInupt from "../atom/input/centi";
 
 const Header = () => {
   return (

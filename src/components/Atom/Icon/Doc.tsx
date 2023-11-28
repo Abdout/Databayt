@@ -1,7 +1,7 @@
 // DocIcon.tsx
 import Image from "next/image";
 import React from "react";
-import useOpacity from "@/hook/Opacity";
+import useOpacity from "@/hook/opacity";
 
 interface DocIconProps {
   src: string;

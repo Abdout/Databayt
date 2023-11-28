@@ -1,7 +1,7 @@
 
 
 "use client";
-import useOpacity from "@/hook/Opacity";
+import useOpacity from "@/hook/opacity";
 
 
 const VoltButton = (props: {

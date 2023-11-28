@@ -1,5 +1,5 @@
 "use client";
-import useOpacity from "@/hook/Opacity";
+import useOpacity from "@/hook/opacity";
 import React, { useState, useRef, useEffect } from "react";
 
 const DropDown = (props: { items: string[] }) => {
