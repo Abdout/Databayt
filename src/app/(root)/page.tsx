@@ -1,11 +1,12 @@
 import React from "react";
-import Team from "@/components/home/team";
+
 import Contributor from "@/components/home/contributor";
 import Sponser from "@/components/home/sponser";
 import MicroIcon from "@/components/atom/icon/micro";
 import Read from "@/components/home/readmore";
 import Footer from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
+import Team from "@/components/home/team";
 
 
 export default function Home() {
