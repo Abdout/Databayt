@@ -5,12 +5,12 @@ import MicroIcon from "@/components/atom/icon/micro";
 import Hero from "@/components/home/hero";
 import Read from "@/components/home/readmore";
 import Footer from "@/components/layout/footer";
-import Header from "@/components/layout/header";
+
 
 export default function Home() {
   return (
     <div className="text-sm space-y-4">
-      <Header />
+      
       <Hero />
       <Read />
       <div className="text-center pt-6">

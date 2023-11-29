@@ -1,5 +1,7 @@
+
 import CentiButton from "@/components/atom/button/centi";
 import CentiInupt from "@/components/atom/input/centi";
+
 import Link from "next/link";
 import React from "react";
 
