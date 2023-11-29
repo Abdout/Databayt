@@ -7,27 +7,27 @@ import Footer from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 const rubik = localFont({
-  src: "../font/Rubik.ttf",
+  src: "../font/rubik.ttf",
   variable: "--rubik",
 });
 
 const algalam = localFont({
-  src: "../font/Algalam.ttf",
+  src: "../font/algalam.ttf",
   variable: "--algalam",
 });
 
 const alvi = localFont({
-  src: "../font/Alvi.ttf",
+  src: "../font/alvi.ttf",
   variable: "--alvi",
 });
 
 const riwaj = localFont({
-  src: "../font/Riwaj.ttf",
+  src: "../font/riwaj.ttf",
   variable: "--riwaj",
 });
 
 const tajawal = localFont({
-  src: "../font/Tajawal.ttf",
+  src: "../font/tajawal.ttf",
   variable: "--tajawal",
 });
 
