@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import CentiInupt from "@/components/atom/input/centi";
-import CentiButton from "@/components/atom/button/centi";
+// import CentiButton from "@/components/atom/button/centi";
 
 const Join = () => {
   return (
     <div className="mt-60 px-6 space-y-3">
-      <CentiInupt placeholder="Name" />
+      {/* <CentiInupt placeholder="Name" />
       <CentiInupt placeholder="Phone" />
       <CentiInupt placeholder="Password" />
       <p>Between 7 to 28 characters</p>
@@ -18,7 +18,7 @@ const Join = () => {
             Log in
           </Link>
         </span>
-      </p>
+      </p> */}
     </div>
   );
 };
