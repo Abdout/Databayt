@@ -6,7 +6,6 @@ import React from "react";
 const Tool = () => {
   return (
     <div className="space-y-4">
-      <Header />
       <p className="text-[11.5px] tracking-wide font-light">
         The most magical part of the Harry Potter books, is that they eventually
         used the skills they learned at school
