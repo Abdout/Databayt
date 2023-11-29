@@ -1,6 +1,3 @@
-"use client";
-
-
 
 import CentiInupt from "../atom/input/centi";
 import Mobile from "../home/mobile";
