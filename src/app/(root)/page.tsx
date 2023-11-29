@@ -1,19 +1,20 @@
+import MicroIcon from "@/components/atom/icon/micro";
+import Contributor from "@/components/home/contributor";
+import Hero from "@/components/home/hero";
+import ReadMore from "@/components/home/readmore";
+import Sponser from "@/components/home/sponser";
+import Team from "@/components/home/team";
+import Footer from "@/components/layout/footer";
 import React from "react";
 
-import Contributor from "@/components/home/contributor";
-import Sponser from "@/components/home/sponser";
-import MicroIcon from "@/components/atom/icon/micro";
-import Read from "@/components/home/readmore";
-import Footer from "@/components/layout/footer";
-import Hero from "@/components/home/hero";
-import Team from "@/components/home/team";
+
 
 
 export default function Home() {
   return (
     <div className="text-sm space-y-4">
       <Hero />
-      <Read />
+      <ReadMore />
       <div className="text-center pt-6">
         <h1>Meet The Team</h1>
       </div>
