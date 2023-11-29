@@ -1,4 +1,4 @@
-import TestHeader from '@/components/Tool/Fix/T&C/TestHeader'
+// import TestHeader from '@/components/tool/fix/T&C/TestHeader'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
     
       <body className={inter.className}>
-      <TestHeader/>
+      {/* <TestHeader/> */}
         {children}
         </body>
     </html>
