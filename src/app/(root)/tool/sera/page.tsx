@@ -1,4 +1,4 @@
-import Profile from '@/components/tool/sera/profile'
+
 import CentiIcon from '@/components/atom/icon/centi'
 
 import React from 'react'
