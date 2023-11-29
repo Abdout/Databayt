@@ -1,5 +1,6 @@
 import MicroIcon from "@/components/atom/icon/micro";
-// import Contributor from "@/components/home/contributor";
+import Contributor from "@/components/home/contributor";
+
 import Hero from "@/components/home/hero";
 import ReadMore from "@/components/home/readmore";
 import Sponser from "@/components/home/sponser";
@@ -22,7 +23,7 @@ export default function Home() {
       <div className="text-center pt-6">
         <h1>Contributor</h1>
       </div>
-      {/* <Contributor /> */}
+      <Contributor />
       <div className="text-center pt-6">
         <h1>Sponser</h1>
       </div>

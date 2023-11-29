@@ -1,6 +1,6 @@
 "use client";
 import Hospital from '@/components/hospital';
-import Map from '@/components/try/Map'
+import Map from '@/components/try/map'
 import React from 'react'
 
 // const Health = () => {
