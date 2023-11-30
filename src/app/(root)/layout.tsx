@@ -1,13 +1,10 @@
 import Header from "@/components/layout/header";
 import type { Metadata } from "next";
-import localFont from "next/dist/compiled/@next/font/dist/local";
-import { Inter } from "next/font/google";
+import { Inter, Rubik } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
-const rubik = localFont({
-  src: "../font/rubik.ttf",
-  variable: "--rubik",
-});
+const rubik = Inter({ subsets: ["latin"], variable: "--inter" });
+
 export const metadata: Metadata = {
   title: "Databayt",
   description: "business automation",
