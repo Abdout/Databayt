@@ -1,4 +1,4 @@
-import Tool from "@/components/tool/hero";
+import Tool from "@/components/tool/root/hero";
 import Back from "@/components/atom/icon/back";
 import ToolIcon from "@/components/atom/icon/tool";
 import React from "react";

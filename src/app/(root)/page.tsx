@@ -5,6 +5,7 @@ import ReadMore from "@/components/home/readmore";
 import Sponser from "@/components/home/sponser";
 import Team from "@/components/home/team";
 import Footer from "@/components/layout/footer";
+import Contributor from "@/components/home/contributor";
 
 export default function Home() {
   return (
@@ -12,26 +13,27 @@ export default function Home() {
       <Hero />
       <ReadMore />
       <div className="text-center pt-6">
-        <h1>Meet The Team</h1>
+        <h2>Meet The Team</h2>
       </div>
       <Team />
       <div className="text-center pt-6">
-        <h1>Contributor</h1>
+        <h2>Contributor</h2>
       </div>
-      {/* <Contributor /> */}
+      <Contributor />
       <div className="text-center pt-6">
-        <h1>Sponser</h1>
+        <h2>Sponser</h2>
       </div>
       <Sponser />
       <div className="text-center pt-6">
-        <h1>Donate</h1>
-        <h1>Donation is appreciated at</h1>
+        <h2>Donate</h2>
+        <p>Donation is appreciated at</p>
       </div>
       <div className="flex gap-2 items-center justify-center">
         <MicroIcon src="/coffee.png" alt="" path="" />
-        <h3>Buy me coffe</h3>
+        <h2>Buy me coffe</h2>
         <Footer />
       </div>
     </div>
+    
   );
 }
