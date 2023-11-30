@@ -33,22 +33,22 @@ import Footer from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 const rubik = localFont({
-  src: "../font/rubik.ttf",
+  src: ".../font/rubik.ttf",
   variable: "--rubik",
 });
 
 const algalam = localFont({
-  src: "../font/algalam.ttf",
+  src: ".../font/algalam.ttf",
   variable: "--algalam",
 });
 
 const alvi = localFont({
-  src: "../font/alvi.ttf",
+  src: ".../font/alvi.ttf",
   variable: "--alvi",
 });
 
 const riwaj = localFont({
-  src: "../font/riwaj.ttf",
+  src: ".../font/riwaj.ttf",
   variable: "--riwaj",
 });
 
