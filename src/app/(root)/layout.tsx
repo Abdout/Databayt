@@ -5,8 +5,6 @@ import Header from "@/component/layout/header";
 import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
 
-
-
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 const rubik = Rubik({ subsets: ["latin"], variable: "--inter" });
 
