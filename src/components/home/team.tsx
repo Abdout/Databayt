@@ -1,7 +1,7 @@
 import React from "react";
 // import Image from './Image'
 import Image from "next/image";
-import MicroIcon from "../atom/icon/micro";
+import MicroIcon from "../atom/icon/md";
 
 const Team = () => {
   return (

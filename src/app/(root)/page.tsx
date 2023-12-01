@@ -1,5 +1,5 @@
 import React from "react";
-import MicroIcon from "@/components/atom/icon/micro";
+import MicroIcon from "@/components/atom/icon/md";
 import Hero from "@/components/home/hero";
 import ReadMore from "@/components/home/readmore";
 import Sponser from "@/components/home/sponser";

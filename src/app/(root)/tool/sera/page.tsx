@@ -1,5 +1,5 @@
 
-import CentiIcon from '@/components/atom/icon/centi'
+import CentiIcon from '@/components/atom/icon/xl'
 
 import React from 'react'
 

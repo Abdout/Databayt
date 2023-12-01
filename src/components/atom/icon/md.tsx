@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const NanoIcon = (props: {
+const mdIcon = (props: {
   src: string;
   alt: string;
   path: string;
@@ -11,12 +11,12 @@ const NanoIcon = (props: {
     <Link href={props.path}>
         <Image
           src={props.src}
-          width={25}
-          height={25}
+          width={50}
+          height={50}
           alt={props.alt}
         />
     </Link>
   );
 };
 
-export default NanoIcon;
+export default mdIcon;

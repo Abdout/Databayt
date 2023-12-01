@@ -1,5 +1,5 @@
 import React from "react";
-import MicroIcon from "../atom/icon/micro";
+import MicroIcon from "../atom/icon/md";
 
 
 const Contributor = () => {

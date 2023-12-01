@@ -1,4 +1,4 @@
-import MicroIcon from "@/components/atom/icon/micro";
+import MicroIcon from "@/components/atom/icon/md";
 import React from "react";
 
 const Conribute = () => {

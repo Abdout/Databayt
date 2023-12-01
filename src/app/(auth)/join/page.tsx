@@ -1,16 +1,17 @@
 import React from "react";
 import Link from "next/link";
-import CentiInupt from "@/components/atom/input/centi";
-// import CentiButton from "@/components/atom/button/centi";
+import xlInupt from "@/components/atom/input/xl";
+
 
 const Join = () => {
   return (
     <div className="mt-60 px-6 space-y-3">
-      {/* <CentiInupt placeholder="Name" />
-      <CentiInupt placeholder="Phone" />
-      <CentiInupt placeholder="Password" />
+      <xlInupt placeholder="Name" />
+      <xlInupt placeholder="Phone" />
+      <xlInupt placeholder="Password" />
       <p>Between 7 to 28 characters</p>
-      <CentiButton placeholder="Join" />
+      <xlButton placeholder="Join" />
+      <xlButton placeholder="Join" />
       <p>
         Already on Databayt?
         <span>
@@ -18,7 +19,7 @@ const Join = () => {
             Log in
           </Link>
         </span>
-      </p> */}
+      </p>
     </div>
   );
 };

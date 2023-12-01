@@ -1,5 +1,5 @@
 import React from "react";
-import CentiInupt from "../atom/input/centi";
+import CentiInupt from "../atom/input/xl";
 import Mobile from "../home/mobile";
 import Nav from "../home/nav";
 

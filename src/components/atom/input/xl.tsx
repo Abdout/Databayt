@@ -1,6 +1,6 @@
 import React from "react";
 
-const CentiInupt = (props: { placeholder: string }) => {
+const xlInupt = (props: { placeholder: string }) => {
   return (
     <div>
       <input
@@ -12,4 +12,4 @@ const CentiInupt = (props: { placeholder: string }) => {
   );
 };
 
-export default CentiInupt;
+export default xlInupt;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const CentiIcon = (props: {
+const xlIcon = (props: {
   src: string;
   alt: string;
   
@@ -16,4 +16,4 @@ const CentiIcon = (props: {
   );
 };
 
-export default CentiIcon;
+export default xlIcon;
