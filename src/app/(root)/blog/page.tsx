@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 const Blog = () => {
   return (
     <div>
-      <Icon icon="mdi-light:home" />
+      hello
     </div>
   );
 };
