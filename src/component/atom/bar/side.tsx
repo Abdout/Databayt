@@ -1,16 +1,15 @@
 "use client";
-
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
-import { SideNavItem } from "@/type/SideNavItem";
 
-interface SidebarProps {
+
+interface SideProps {
   item: Array<any>; // Replace 'any' with the type of your items
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ item }) => {
+const Side: React.FC<SideProps> = ({ item }) => {
   return (
     <div className="flex flex-col space-y-2 p-4 pt-6">
       {item.map((item, idx) => {
@@ -20,13 +19,21 @@ const Sidebar: React.FC<SidebarProps> = ({ item }) => {
   );
 };
 
-export default Sidebar;
+export default Side;
 
-const MenuItem = ({ item }: { item: SideNavItem }) => {
+type SideItem = {
+  title: string;
+  path: string;
+  icon?: JSX.Element;
+  submenu?: boolean;
+  subMenuItems?: SideItem[];
+};
+
+const MenuItem = ({ item }: { item: SideItem }) => {
   const pathname = usePathname();
-  const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const [subMenu, setSubMenu] = useState(false);
   const toggleSubMenu = () => {
-    setSubMenuOpen(!subMenuOpen);
+    setSubMenu(!subMenu);
   };
 
   return (
@@ -35,7 +42,8 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
         <>
           <button
             onClick={toggleSubMenu}
-            className={`flex flex-row items-center p-4  hover-bg-zinc-100 w-full justify-between hover:bg-gray-300${
+            className={`flex flex-row items-center p-4 
+            hover-bg-zinc-100 w-full justify-between hover:bg-gray-300${
               pathname.includes(item.path) ? "bg-zinc-100" : ""
             }`}
           >
@@ -44,12 +52,12 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
               <span className="font-medium text-xl  flex">{item.title}</span>
             </div>
 
-            <div className={`${subMenuOpen ? "rotate-180" : ""} flex`}>
+            <div className={`${subMenu ? "rotate-180" : ""} flex`}>
               <Icon icon="lucide:chevron-down" width="24" height="24" />
             </div>
           </button>
 
-          {subMenuOpen && (
+          {subMenu && (
             <div className="my-2 ml-12 flex flex-col space-y-4">
               {item.subMenuItems?.map((subItem, idx) => {
                 return (

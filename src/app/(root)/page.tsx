@@ -5,10 +5,13 @@ import Sponser from "@/component/home/sponser";
 import Team from "@/component/home/team";
 import Contributor from "@/component/home/contributor";
 import MdIcon from "@/component/atom/icon/md";
+import Header from "@/component/layout/header";
+import Footer from "@/component/layout/footer";
 
 export default function Home() {
   return (
     <div className="text-sm space-y-4">
+      <Header />
       <Hero />
       <ReadMore />
       <div className="text-center pt-6">
@@ -30,6 +33,7 @@ export default function Home() {
       <div className="flex gap-2 items-center justify-center">
         <MdIcon src="/coffee.png" alt="" path="" />
         <h2>Buy me coffe</h2>
+        <Footer />
         
       </div>
     </div>

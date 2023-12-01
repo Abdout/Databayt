@@ -8,7 +8,7 @@ const Mobile = () => {
           {navLink.map((link) => (
             <Link href={link.href} key={link.key}
             className=" text-gray-600 regular-16 flexCenter cursor-pointer
-            transition-all hover:text-black">
+            transition-all hover:text-black active:text-black">
             {link.label}
             </Link>
             ))}

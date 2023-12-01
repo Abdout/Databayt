@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={(inter.variable, rubik.variable)}>
-        <Header />
+        
         {children}
-        <Footer />
+        
       </body>
     </html>
   );
