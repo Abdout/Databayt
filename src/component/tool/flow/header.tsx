@@ -1,5 +1,5 @@
-import NanoIcon from "@/components/atom/icon/sm";
-import CentiInupt from "@/components/atom/input/xl";
+import NanoIcon from "@/component/atom/icon/sm";
+import CentiInupt from "@/component/atom/input/xl";
 import FlowBurger from "./burger";
 
 const DashHeader = () => {

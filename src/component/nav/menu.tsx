@@ -1,39 +1,29 @@
 "use client";
-import React, { useState } from "react";
-import { Squeeze as Hamburger } from "hamburger-react";
+import React, { useState } from 'react';
+import { Squeeze as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from "framer-motion";
-import homeNav from "@/constants/homeNav";
-import flowNav from "@/constants/flowNav";
+import homeNav from '@/constant/homeNav';
 
-
-const Burger = (props:{
-    left: number;
-    right: number;
-    item: string[];
-}) => {
-  const [open, setOpen] = useState(false);
-
+const Menu = () => {
+    const [open, setOpen] = useState(false);
+  
   return (
-    <div className="md:hidden">
-      <div className="flex -m-3">
-        <Hamburger size={20} distance="lg" toggled={open} toggle={setOpen} />
+    <div className='md:hidden'>
+      <div className='absolute top-[-0.4rem] right-[-0.8rem] z-10'>
+        <Hamburger size={20} distance='lg' toggled={open} toggle={setOpen}/>
       </div>
-
-      <AnimatePresence>
+        
+        <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed item-center h-screen right-[{props.right}] left-[props.left] top-[-24px] pt-12 pl-4 shadow-4xl bg-[#FCFCFC]"
+            className="fixed item-center h-screen left-[140px] right-0 top-[-24px] pt-20 shadow-4xl bg-[#FCFCFC]"
           >
-            <div className="flex items-center gap-2 p-8">
-                      <div className="rounded-full w-4 h-4 bg-black"></div>
-                      <h1>Brand</h1>
-                    </div>
             <ul className="grid gap-2">
-              {flowNav.map((route, idx) => {
+              {homeNav.map((route, idx) => {
                 // const { Icon } = route;
 
                 return (
@@ -49,7 +39,6 @@ const Burger = (props:{
                     key={route.title}
                     className="w-full p-[0.08rem]"
                   >
-                    
                     <a
                       onClick={() => setOpen((prev) => !prev)}
                       className={
@@ -71,4 +60,5 @@ const Burger = (props:{
   );
 };
 
-export default Burger;
+
+export default Menu

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import XlInupt from "@/components/atom/input/xl";
-import XlButton from "@/components/atom/button/xl";
+import XlInupt from "@/component/atom/input/xl";
+import XlButton from "@/component/atom/button/xl";
 
 
 const Login = () => {

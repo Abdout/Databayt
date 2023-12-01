@@ -1,11 +1,11 @@
 import React from "react";
-import Hero from "@/components/home/hero";
-import ReadMore from "@/components/home/readmore";
-import Sponser from "@/components/home/sponser";
-import Team from "@/components/home/team";
-import Footer from "@/components/layout/footer";
-import Contributor from "@/components/home/contributor";
-import MdIcon from "@/components/atom/icon/md";
+import Hero from "@/component/home/hero";
+import ReadMore from "@/component/home/readmore";
+import Sponser from "@/component/home/sponser";
+import Team from "@/component/home/team";
+import Footer from "@/component/layout/footer";
+import Contributor from "@/component/home/contributor";
+import MdIcon from "@/component/atom/icon/md";
 
 export default function Home() {
   return (

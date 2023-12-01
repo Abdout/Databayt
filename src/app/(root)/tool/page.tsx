@@ -1,6 +1,6 @@
-import Tools from "@/components/tool/root/card";
-import Header from "@/components/layout/header";
-import toolData from "@/constants/tool";
+import Tools from "@/component/tool/root/card";
+import Header from "@/component/layout/header";
+import toolData from "@/constant/tool";
 import React from "react";
 
 const Tool = () => {

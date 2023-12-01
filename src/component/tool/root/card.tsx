@@ -1,4 +1,4 @@
-import toolData from "@/constants/tool";
+import toolData from "@/constant/tool";
 import Link from "next/link";
 import React from "react";
 

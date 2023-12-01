@@ -1,4 +1,4 @@
-import { SidebarData } from "@/constants/Sidebar";
+import { SidebarData } from "@/constant/Sidebar";
 import React from "react";
 import SubMenu from "./submenu";
 

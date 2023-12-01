@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
-import { SIDENAV_ITEMS } from "@/constants/dash";
+import { SIDENAV_ITEMS } from "@/constant/dash";
 import { SideNavItem } from "@/type/SideNavItem";
 
 const SideNav = () => {

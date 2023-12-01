@@ -1,4 +1,4 @@
-import Header from "@/components/layout/header";
+import Header from "@/component/layout/header";
 import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
 

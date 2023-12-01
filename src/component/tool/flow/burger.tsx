@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
-import flowNav from "@/constants/flowNav";
+import flowNav from "@/constant/flowNav";
 
 
 const FlowBurger = () => {

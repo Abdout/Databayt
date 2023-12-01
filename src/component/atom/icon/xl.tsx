@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const xlIcon = (props: {
+const XlIcon = (props: {
   src: string;
   alt: string;
   
@@ -16,4 +16,4 @@ const xlIcon = (props: {
   );
 };
 
-export default xlIcon;
+export default XlIcon;

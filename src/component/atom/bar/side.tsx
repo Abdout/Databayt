@@ -4,13 +4,16 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
-import { SIDENAV_ITEMS } from "@/constants/dash";
 import { SideNavItem } from "@/type/SideNavItem";
 
-const Sidebar = () => {
+interface SidebarProps {
+  item: Array<any>; // Replace 'any' with the type of your items
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ item }) => {
   return (
     <div className="flex flex-col space-y-2 p-4 pt-6">
-      {SIDENAV_ITEMS.map((item, idx) => {
+      {item.map((item, idx) => {
         return <MenuItem key={idx} item={item} />;
       })}
     </div>
