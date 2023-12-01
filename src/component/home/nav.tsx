@@ -21,7 +21,7 @@ const Nav = () => {
       </ul>
       <div className=" flex gap-8">
         <Image
-          className=" hidden   md:flex"
+          className=" hidden md:flex"
           src="/search.png"
           alt=""
           width={20}

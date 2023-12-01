@@ -1,6 +1,10 @@
+import React from "react";
+import Footer from "@/component/layout/footer";
 import Header from "@/component/layout/header";
 import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
+
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 const rubik = Rubik({ subsets: ["latin"], variable: "--inter" });
@@ -20,6 +24,7 @@ export default function RootLayout({
       <body className={(inter.variable, rubik.variable)}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

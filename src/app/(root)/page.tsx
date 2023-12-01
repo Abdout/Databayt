@@ -3,7 +3,6 @@ import Hero from "@/component/home/hero";
 import ReadMore from "@/component/home/readmore";
 import Sponser from "@/component/home/sponser";
 import Team from "@/component/home/team";
-import Footer from "@/component/layout/footer";
 import Contributor from "@/component/home/contributor";
 import MdIcon from "@/component/atom/icon/md";
 
@@ -31,7 +30,7 @@ export default function Home() {
       <div className="flex gap-2 items-center justify-center">
         <MdIcon src="/coffee.png" alt="" path="" />
         <h2>Buy me coffe</h2>
-        <Footer />
+        
       </div>
     </div>
     

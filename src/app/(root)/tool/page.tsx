@@ -1,5 +1,4 @@
 import Tools from "@/component/tool/root/card";
-import Header from "@/component/layout/header";
 import toolData from "@/constant/tool";
 import React from "react";
 

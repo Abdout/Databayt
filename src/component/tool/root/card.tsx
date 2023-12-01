@@ -1,7 +1,5 @@
-import toolData from "@/constant/tool";
-import Link from "next/link";
 import React from "react";
-
+import Link from "next/link";
 const Tool = (props: {
   id: number;
   title: string;

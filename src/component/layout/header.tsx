@@ -1,7 +1,7 @@
 import React from "react";
-import CentiInupt from "../atom/input/xl";
 import Mobile from "../home/mobile";
 import Nav from "../home/nav";
+import XlInupt from "../atom/input/xl";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
         <h1>Databayt</h1>
         <Nav />
       </nav>
-      <CentiInupt placeholder="Search" /> 
+      <XlInupt placeholder="Search" /> 
       <Mobile />
     </div>
   );
