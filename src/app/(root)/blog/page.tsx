@@ -1,11 +1,11 @@
 
 import React from "react";
+import { Icon } from '@iconify/react';
 
 const Blog = () => {
   return (
     <div>
-      
-      <h1>Blog</h1>
+      <Icon icon="mdi-light:home" />
     </div>
   );
 };
