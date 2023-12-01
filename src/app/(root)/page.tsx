@@ -1,11 +1,11 @@
 import React from "react";
-import MicroIcon from "@/components/atom/icon/md";
 import Hero from "@/components/home/hero";
 import ReadMore from "@/components/home/readmore";
 import Sponser from "@/components/home/sponser";
 import Team from "@/components/home/team";
 import Footer from "@/components/layout/footer";
 import Contributor from "@/components/home/contributor";
+import MdIcon from "@/components/atom/icon/md";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
         <p>Donation is appreciated at</p>
       </div>
       <div className="flex gap-2 items-center justify-center">
-        <MicroIcon src="/coffee.png" alt="" path="" />
+        <MdIcon src="/coffee.png" alt="" path="" />
         <h2>Buy me coffe</h2>
         <Footer />
       </div>

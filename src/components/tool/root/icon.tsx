@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const tIcon = (props: {
+const ToolIcon = (props: {
   src: string;
   width?: number;
   height?: number;
@@ -24,4 +24,4 @@ const tIcon = (props: {
   );
 };
 
-export default tIcon;
+export default ToolIcon;

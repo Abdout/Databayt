@@ -1,17 +1,19 @@
 import React from "react";
 import Link from "next/link";
-import xlInupt from "@/components/atom/input/xl";
+import XlInupt from "@/components/atom/input/xl";
+import XlButton from "@/components/atom/button/xl";
+
 
 
 const Join = () => {
   return (
     <div className="mt-60 px-6 space-y-3">
-      <xlInupt placeholder="Name" />
-      <xlInupt placeholder="Phone" />
-      <xlInupt placeholder="Password" />
+      <XlInupt placeholder="Name" />
+      <XlInupt placeholder="Phone" />
+      <XlInupt placeholder="Password" />
       <p>Between 7 to 28 characters</p>
-      <xlButton placeholder="Join" />
-      <xlButton placeholder="Join" />
+      <XlButton placeholder="Join" />
+      <XlButton placeholder="Join" />
       <p>
         Already on Databayt?
         <span>

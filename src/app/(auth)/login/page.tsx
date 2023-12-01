@@ -1,17 +1,18 @@
 import React from "react";
-// import Link from "next/link";
-// import CentiInupt from "@/components/atom/input/centi";
-// import CentiButton from "@/components/atom/button/centi";
+import Link from "next/link";
+import XlInupt from "@/components/atom/input/xl";
+import XlButton from "@/components/atom/button/xl";
+
 
 const Login = () => {
   return (
     <div className="mt-[20rem] px-6 space-y-3">
-      {/* <CentiInupt placeholder="Phone" />
-      <CentiInupt placeholder="Password" />
+      <XlInupt placeholder="Phone" />
+      <XlInupt placeholder="Password" />
       <Link href="/member/reset">
         <p>Forget your password?</p>
       </Link>
-      <CentiButton placeholder="Log in" /> */}
+      <XlButton placeholder="Log in" />
     </div>
   );
 };

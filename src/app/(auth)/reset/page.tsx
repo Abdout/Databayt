@@ -1,15 +1,14 @@
 import React from "react";
-// import CentiButton from "@/components/atom/button/centi";
-// import CentiInupt from "@/components/atom/input/centi";
-
+import XlInupt from "@/components/atom/input/xl";
+import XlButton from "@/components/atom/button/xl";
 
 const Reset = () => {
   return (
     <div className="mt-40 px-6 space-y-3">
-      {/* <h1>Forget password?</h1>
+      <h1>Forget password?</h1>
       <p>Reset password in two quick steps</p>
-      <CentiInupt placeholder="Phone" />
-      <CentiButton placeholder="Reset password" weight={16} /> */}
+      <XlInupt placeholder="Phone" />
+      <XlButton placeholder="Reset password" weight={16} />
     </div>
   );
 };

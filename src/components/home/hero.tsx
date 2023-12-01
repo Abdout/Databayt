@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../atom/button/md";
+import MdButton from "../atom/button/md";
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
               داتابيت
             </h1>
             <div className="pr-[70px] pt-6 ">
-              <Button />
+              <MdButton placeholder="Get started"/>
             </div>
           </div>
           <div className="hidden md:flex rounded-full w-40 h-40 bg-black"></div>

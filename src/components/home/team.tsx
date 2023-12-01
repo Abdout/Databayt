@@ -1,7 +1,5 @@
 import React from "react";
-// import Image from './Image'
-import Image from "next/image";
-import MicroIcon from "../atom/icon/md";
+import MdIcon from "../atom/icon/md";
 
 const Team = () => {
   return (
@@ -9,7 +7,7 @@ const Team = () => {
       <div className=" outer-dev px-8 w-[100px] h-[140px] border border-black ">
         <div className="flex flex-col justify-center items-center h-full gap-2">
           <div>
-            <MicroIcon src="/photo.png" alt="" path="" />
+            <MdIcon src="/photo.png" alt="" path="" />
           </div>
 
           <div className="flex flex-col ">
@@ -22,7 +20,7 @@ const Team = () => {
       <div className=" outer-dev px-8 w-[100px] h-[140px] border border-black ">
         <div className="flex flex-col justify-center items-center h-full gap-2">
           <div>
-            <MicroIcon src="/photo.png" alt="" path="" />
+            <MdIcon src="/photo.png" alt="" path="" />
           </div>
 
           <div className="flex flex-col ">
@@ -35,7 +33,7 @@ const Team = () => {
       <div className=" outer-dev px-8 w-[100px] h-[140px] border border-black ">
         <div className="flex flex-col justify-center items-center h-full gap-2">
           <div>
-            <MicroIcon src="/photo.png" alt="" path="" />
+            <MdIcon src="/photo.png" alt="" path="" />
           </div>
 
           <div className="flex flex-col ">
@@ -48,7 +46,7 @@ const Team = () => {
       <div className=" outer-dev px-8 w-[100px] h-[140px] border border-black ">
         <div className="flex flex-col justify-center items-center h-full gap-2">
           <div>
-            <MicroIcon src="/photo.png" alt="" path="" />
+            <MdIcon src="/photo.png" alt="" path="" />
           </div>
 
           <div className="flex flex-col ">
@@ -61,7 +59,7 @@ const Team = () => {
       <div className=" outer-dev px-8 w-[100px] h-[140px] border border-black ">
         <div className="flex flex-col justify-center items-center h-full gap-2">
           <div>
-            <MicroIcon src="/photo.png" alt="" path="" />
+            <MdIcon src="/photo.png" alt="" path="" />
           </div>
 
           <div className="flex flex-col ">

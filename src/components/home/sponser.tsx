@@ -1,5 +1,5 @@
 import React from 'react'
-import MicroIcon from "../atom/icon/md";
+import MdIcon from '../atom/icon/md';
 
 const Sponser = () => {
   return (
@@ -7,22 +7,22 @@ const Sponser = () => {
          <div className="flex gap-3">
       <div className="  p-5 w-[65px] h-[65px] border border-black rounded-full">
         <div className="flex  justify-center items-center h-full gap-2">
-          <MicroIcon src="/photo.png" alt="" path="" />
+          <MdIcon src="/photo.png" alt="" path="" />
         </div>
       </div>
       <div className="  p-5 w-[65px] h-[65px] border border-black rounded-full">
         <div className="flex  justify-center items-center h-full gap-2">
-          <MicroIcon src="/photo.png" alt="" path="" />
+          <MdIcon src="/photo.png" alt="" path="" />
         </div>
       </div>
       <div className="  p-5 w-[65px] h-[65px] border border-black rounded-full">
         <div className="flex  justify-center items-center h-full gap-2">
-          <MicroIcon src="/photo.png" alt="" path="" />
+          <MdIcon src="/photo.png" alt="" path="" />
         </div>
       </div>
       <div className="  p-5 w-[65px] h-[65px] border border-black rounded-full">
         <div className="flex  justify-center items-center h-full gap-2">
-          <MicroIcon src="/photo.png" alt="" path="" />
+          <MdIcon src="/photo.png" alt="" path="" />
         </div>
       </div>
     </div>

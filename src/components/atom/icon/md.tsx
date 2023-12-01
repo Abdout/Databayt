@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const mdIcon = (props: {
+const MdIcon = (props: {
   src: string;
   alt: string;
   path: string;
@@ -19,4 +19,4 @@ const mdIcon = (props: {
   );
 };
 
-export default mdIcon;
+export default MdIcon;
