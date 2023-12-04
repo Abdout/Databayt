@@ -1,22 +1,24 @@
-import NanoIcon from "@/component/atom/icon/sm";
-import CentiInupt from "@/component/atom/input/xl";
-import FlowBurger from "./burger";
 
-const DashHeader = () => {
+import FlowBurger from "./burger";
+import XlInupt from "@/component/atom/input/xl";
+import SmIcon from "@/component/atom/icon/sm";
+import Burger from "@/component/atom/icon/burger";
+
+const Header = () => {
     return (
       <>
         <div className="hidden md:flex  justify-between p-4">
-          <div className="flex  justify-between gap-[30rem] pl-[30rem]">
-            <CentiInupt placeholder="Search" />
-            <NanoIcon src="/profile.png" alt="Osman" path="#" />
+          <div className="flex justfiy-end items-center gap-[30rem] pl-[30rem]">
+            <SmIcon src="/search.png" alt="search" path="" />
+            <SmIcon src="/profile.png" alt="Osman" path="#" />
           </div>
         </div>
   
         <div className="md:hidden">
-          <FlowBurger />
+          <Burger />
         </div>
       </>
     );
   };
   
-  export default DashHeader;
+  export default Header;

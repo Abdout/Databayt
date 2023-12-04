@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const smIcon = (props: {
+const SmIcon = (props: {
   src: string;
   alt: string;
   path: string;
@@ -19,4 +19,4 @@ const smIcon = (props: {
   );
 };
 
-export default smIcon;
+export default SmIcon;

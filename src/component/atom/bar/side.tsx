@@ -1,91 +1,22 @@
-"use client";
-import React, { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { Icon } from "@iconify/react";
+import Bottom from "@/component/tool/flow/bottom";
+import Brand from "@/component/tool/flow/brand";
+import Item from "@/component/tool/flow/item";
+import React from "react";
 
-
-interface SideProps {
-  item: Array<any>; // Replace 'any' with the type of your items
-}
-
-const Side: React.FC<SideProps> = ({ item }) => {
+const side = () => {
   return (
-    <div className="flex flex-col space-y-2 p-4 pt-6">
-      {item.map((item, idx) => {
-        return <MenuItem key={idx} item={item} />;
-      })}
+    <div className="sticky h-screen w-60  bg-gray-100 px-6">
+      <div className="pl-4 pt-6">
+        <Brand />
+      </div>
+      <div className="mt-8">
+        <Item />
+      </div>
+      <div className="mt-14">
+        <Bottom />
+      </div>
     </div>
   );
 };
 
-export default Side;
-
-type SideItem = {
-  title: string;
-  path: string;
-  icon?: JSX.Element;
-  submenu?: boolean;
-  subMenuItems?: SideItem[];
-};
-
-const MenuItem = ({ item }: { item: SideItem }) => {
-  const pathname = usePathname();
-  const [subMenu, setSubMenu] = useState(false);
-  const toggleSubMenu = () => {
-    setSubMenu(!subMenu);
-  };
-
-  return (
-    <div className="">
-      {item.submenu ? (
-        <>
-          <button
-            onClick={toggleSubMenu}
-            className={`flex flex-row items-center p-4 
-            hover-bg-zinc-100 w-full justify-between hover:bg-gray-300${
-              pathname.includes(item.path) ? "bg-zinc-100" : ""
-            }`}
-          >
-            <div className="flex flex-row space-x-4 items-center">
-              {item.icon}
-              <span className="font-medium text-xl  flex">{item.title}</span>
-            </div>
-
-            <div className={`${subMenu ? "rotate-180" : ""} flex`}>
-              <Icon icon="lucide:chevron-down" width="24" height="24" />
-            </div>
-          </button>
-
-          {subMenu && (
-            <div className="my-2 ml-12 flex flex-col space-y-4">
-              {item.subMenuItems?.map((subItem, idx) => {
-                return (
-                  <Link
-                    key={idx}
-                    href={subItem.path}
-                    className={`${
-                      subItem.path === pathname ? "font-medium" : ""
-                    }`}
-                  >
-                    <span>{subItem.title}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          )}
-        </>
-      ) : (
-        <Link
-          href={item.path}
-          className={`flex flex-row space-x-2 items-center p-2 hover:bg-gray-300  ${
-            item.path === pathname ? "bg-gray-400 " : ""
-          }`}
-        >
-          {item.icon}
-          <span className="font-medium text-xl flex">{item.title}</span>
-        </Link>
-      )}
-    </div>
-  );
-};
+export default side;

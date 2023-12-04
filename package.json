@@ -13,7 +13,7 @@
     "hamburger-react": "^2.5.0",
     "mongodb": "^4.17.1",
     "mongoose": "^8.0.1",
-    "next": "14.0.1",
+    "next": "^14.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
