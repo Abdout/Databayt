@@ -12,7 +12,7 @@ const Card = () => {
         <h2>On going</h2>
       </div>
       <div className="flex gap-2">
-        <SmIcon src="/edit.png" alt="Edit" path="/tool/flow/edit"/>
+        <SmIcon src="/edit.png" alt="Edit" path="/tool/flow/project/edit"/>
         <SmIcon src="/delete.png" alt="Delete" path=""/>
       </div>
     </div>
