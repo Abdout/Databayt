@@ -1,28 +1,38 @@
-import React from "react";
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter, Rubik } from "next/font/google";
+'use client';
+import { Inter } from "next/font/google";
+import "./../globals.css";
+import Side from "@/component/layout/side";
+import Header from "@/component/layout/header";
+import { MainProvider } from "@/provider/main";
+import { usePathname } from "next/navigation";
 
-const inter = Inter({ subsets: ["latin"], variable: "--inter" });
-const rubik = Rubik({ subsets: ["latin"], variable: "--inter" });
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Databayt",
-  description: "business automation",
-};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+
+  const pathname = usePathname();
+  const NoLayout = ['/', '/error', '/password', '/verification', '/join', '/reset']
+  if (NoLayout.includes(pathname)) {
+    return <>{children}</>;
+  }
+
   return (
-    <html lang="en">
-      <body className={(inter.variable, rubik.variable)}>
-        
-        {children}
-        
-      </body>
-    </html>
+    <MainProvider>
+      <html lang="en">
+        <body className={`${inter.className} flex`}>
+        <div className="flex w-full">
+        <div className="w-1/5">
+          <Side />
+        </div>
+        <div className="w-4/5 flex flex-col">
+          <Header />
+          {children}
+        </div>
+        </div>
+        </body>
+      </html>
+    </MainProvider>
   );
 }

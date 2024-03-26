@@ -1,9 +1,9 @@
-import Bottom from "@/component/tool/flow/bottom";
-import Brand from "@/component/tool/flow/brand";
-import Item from "@/component/tool/flow/item";
+import Bottom from "@/component/layout/bottom";
+import Brand from "@/component/layout/brand";
+import Item from "@/component/layout/item";
 import React from "react";
 
-const side = () => {
+const Side = () => {
   return (
     <div className="sticky h-screen w-60  bg-gray-100 px-6">
       <div className="pl-4 pt-6">
@@ -19,4 +19,4 @@ const side = () => {
   );
 };
 
-export default side;
+export default Side;

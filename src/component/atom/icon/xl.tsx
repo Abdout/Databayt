@@ -9,8 +9,8 @@ const XlIcon = (props: {
   return (
         <Image
           src={props.src}
-          width={150}
-          height={150}
+          width={130}
+          height={130}
           alt={props.alt}
         />
   );

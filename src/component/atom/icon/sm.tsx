@@ -6,6 +6,7 @@ const SmIcon = (props: {
   src: string;
   alt: string;
   path: string;
+  onClick?: () => void;
 }) => {
   return (
     <Link href={props.path}>
@@ -14,6 +15,7 @@ const SmIcon = (props: {
           width={25}
           height={25}
           alt={props.alt}
+          onClick={props.onClick}
         />
     </Link>
   );

@@ -1,16 +1,9 @@
-import React from "react";
-import XlInupt from "@/component/atom/input/xl";
-import XlButton from "@/component/atom/button/xl";
+import { ResetForm } from "@/component/auth/reset-form";
 
-const Reset = () => {
-  return (
-    <div className="mt-40 px-6 space-y-3">
-      <h1>Forget password?</h1>
-      <p>Reset password in two quick steps</p>
-      <XlInupt placeholder="Phone" />
-      <XlButton placeholder="Reset password" weight={16} />
-    </div>
+const ResetPage = () => {
+  return ( 
+    <ResetForm />
   );
-};
-
-export default Reset;
+}
+ 
+export default ResetPage;
