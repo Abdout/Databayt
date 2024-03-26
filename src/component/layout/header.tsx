@@ -9,7 +9,7 @@ const Header = () => {
     <div className="flex flex-col space-y-2">
       <nav className="flex py-2 justify-between items-center max-container padding-container relative z-30">
         <Link href='/'>
-        <h1>Databayt</h1>
+        <h1>Data</h1>
         </Link>
         <Nav />
       </nav>
