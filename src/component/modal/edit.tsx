@@ -1,46 +1,53 @@
-
 "use client";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Icon } from "@iconify/react";
 
-const Add = (props: { onClose: () => void }) => {
+const Edit = (props: {
+  id: any;
+  title: string;
+  description: string;
+  onClose: () => void;
+  topic: any;
+  onUpdate: (updatedTopic: any) => void;
+}) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const closeModal = (e: React.MouseEvent) => {
     if (modalRef.current === e.target) {
       props.onClose();
     }
   };
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+  const { id, title, description } = props.topic;
 
+  const [newTitle, setNewTitle] = useState(props.topic.title);
+  const [newDescription, setNewDescription] = useState(props.topic.description);
   const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!title || !description) {
-      alert("Title and description are required.");
-      return;
-    }
-
     try {
-      const res = await fetch("http://localhost:3000/api/topics", {
-        method: "POST",
+      const res = await fetch(`http://localhost:3000/api/topics/${props.topic._id}`, {
+        method: "PUT",
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify({ title, description }),
+        body: JSON.stringify({ itle: newTitle, description: newDescription }),
       });
 
       if (res.ok) {
-        
-        router.push("/tool/flow/project");
+        const updatedTopic = await res.json();
+        props.onUpdate(updatedTopic);
         props.onClose();
-        window.location.reload();
-      } else {
-        throw new Error("Failed to create a topic");
       }
+
+      if (!res.ok) {
+        throw new Error("Failed to update topic");
+      }
+
+      router.refresh();
+      router.push("/tool/flow/project");
+      props.onClose();
     } catch (error) {
       console.log(error);
     }
@@ -49,7 +56,7 @@ const Add = (props: { onClose: () => void }) => {
     <div
       ref={modalRef}
       onClick={closeModal}
-      className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center"
+      className="fixed inset-0 bg-black bg-opacity-20 flex justify-center items-center"
     >
       <div className=" flex flex-col  bg-[#fcfcfc] p-6">
         <button onClick={props.onClose} className="place-self-end ">
@@ -57,16 +64,16 @@ const Add = (props: { onClose: () => void }) => {
         </button>
         <form onSubmit={handleSubmit} className="flex flex-col p-20 gap-3">
           <input
-            onChange={(e) => setTitle(e.target.value)}
-            value={title}
+            onChange={(e) => setNewTitle(e.target.value)}
+            value={newTitle}
             className="border border-slate-500 px-8 py-2"
             type="text"
             placeholder="Topic Title"
           />
 
           <input
-            onChange={(e) => setDescription(e.target.value)}
-            value={description}
+            onChange={(e) => setNewDescription(e.target.value)}
+            value={newDescription}
             className="border border-slate-500 px-8 py-2"
             type="text"
             placeholder="Topic Description"
@@ -76,7 +83,7 @@ const Add = (props: { onClose: () => void }) => {
             type="submit"
             className="bg-yellow-400 font-medium mt-4 py-3 px-6 h-12"
           >
-            Create project
+            Update Topic
           </button>
         </form>
       </div>
@@ -84,4 +91,4 @@ const Add = (props: { onClose: () => void }) => {
   );
 };
 
-export default Add;
+export default Edit;
