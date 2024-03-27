@@ -1,12 +1,17 @@
 import { LoginButton } from "@/component/auth/login-button";
 import MdButton from "@/component/atom/button/md";
 import MdIcon from "@/component/atom/icon/md";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-2 text-start">
       <h1 className="text-3xl text-start pt-40">Databayt</h1>
-      <p className="text-2xl text-start pb-4">Business Automation</p>
+      <p className="text-2xl text-start ">Business Automation</p>
+      <Image 
+      className="pb-4"
+      src='/pen.png' width={200} height={200} alt='Pen'
+      />
       <LoginButton asChild>
         <MdButton placeholder="Get started" />
       </LoginButton>
@@ -16,7 +21,7 @@ export default function Home() {
         Code, <br/>Discussion and Roadmap on Figma, GitHub, Discord, and
         Readme, respectively.
       </p>
-      <div className="flex gap-5 items-center pt-2">
+      <div className="flex gap-7 items-center pt-2">
         <MdIcon
           src="/contribute/figma.png"
           alt="Figma"
