@@ -4,9 +4,7 @@
  * @type {string[]}
  */
 export const publicRoutes = [
-  "/",
-  "https://databayt.org/verification",
-  "/verification"
+  "*",
 ];
 
 /**
