@@ -17,7 +17,7 @@ export default function Home() {
       <h1 className="text-3xl text-start pt-40">Databayt</h1>
       <Image 
       className="pb-4"
-      src='/pen.png' width={180} height={180} alt='Pen'
+      src='/pen.png' width={200} height={200} alt='Pen'
       />
       <LoginButton asChild>
         <MdButton placeholder="Get started" />
@@ -39,11 +39,13 @@ export default function Home() {
           alt="Github"
           path="https://github.com/Abdout/Databayt"
         />
+        
         <MdIcon
           src="/contribute/discord.png"
           alt="Discord"
           path="https://discord.gg/ZBf9qGyH"
         />
+        
         <button onClick={() => openModal(null)}>
         <MdIcon
           src="/contribute/readme.png"
