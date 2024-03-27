@@ -1,16 +1,23 @@
+'use client';
 import { LoginButton } from "@/component/auth/login-button";
 import MdButton from "@/component/atom/button/md";
 import MdIcon from "@/component/atom/icon/md";
 import Image from "next/image";
+import Modal from "@/component/atom/modal/modal";
+import { useModal } from "@/provider/modal";
+import Readme from "@/component/home/readme";
+
 
 export default function Home() {
+  const { modal, openModal } = useModal();
   return (
+    <>
+    {modal.open && modal.id === null && <Modal content={<Readme />} big = {true}/>}
     <div className="flex flex-col items-center justify-center min-h-screen space-y-2 text-start">
       <h1 className="text-3xl text-start pt-40">Databayt</h1>
-      <p className="text-2xl text-start ">Business Automation</p>
       <Image 
       className="pb-4"
-      src='/pen.png' width={200} height={200} alt='Pen'
+      src='/pen.png' width={180} height={180} alt='Pen'
       />
       <LoginButton asChild>
         <MdButton placeholder="Get started" />
@@ -21,7 +28,7 @@ export default function Home() {
         Code, <br/>Discussion and Roadmap on Figma, GitHub, Discord, and
         Readme, respectively.
       </p>
-      <div className="flex gap-7 items-center pt-2">
+      <div className="flex gap-6 items-center pt-2">
         <MdIcon
           src="/contribute/figma.png"
           alt="Figma"
@@ -37,12 +44,15 @@ export default function Home() {
           alt="Discord"
           path="https://discord.gg/ZBf9qGyH"
         />
+        <button onClick={() => openModal(null)}>
         <MdIcon
           src="/contribute/readme.png"
           alt="Readme"
           path=""
         />
+        </button>
       </div>
     </div>
+    </>
   );
 }
