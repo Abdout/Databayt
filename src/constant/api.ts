@@ -1,2 +1,2 @@
 
-export const api = "https://eco.databayt.org/api";
+export const api = "https://databayt.org/api";
