@@ -28,7 +28,7 @@ export default function Home() {
         Code, <br/>Discussion and Roadmap on Figma, GitHub, Discord, and
         Readme, respectively.
       </p>
-      <div className="flex gap-6 items-center pt-2">
+      <div className="flex gap-6 items-center mt-6">
         <MdIcon
           src="/contribute/figma.png"
           alt="Figma"
