@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <>
     {modal.open && modal.id === null && <Modal content={<Readme />} big = {true}/>}
-    <div className="flex flex-col items-center justify-center min-h-screen space-y-2 text-start">
+    <div className="flex flex-col items-center justify-center min-h-screen  text-start">
       <h1 className="text-3xl text-start pt-40">Databayt</h1>
       <Image 
-      className="pb-4"
+      className="pb-6"
       src='/pen.png' width={200} height={200} alt='Pen'
       />
       <LoginButton asChild>
