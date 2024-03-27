@@ -23,7 +23,7 @@ export const LoginButton = ({
   const router = useRouter();
 
   const onClick = () => {
-    router.push("/login");
+    router.push("https://databayt.org/login");
   };
 
   if (mode === "modal") {
