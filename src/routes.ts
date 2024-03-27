@@ -5,7 +5,8 @@
  */
 export const publicRoutes = [
   "/",
-  "https://databayt.org/verification"
+  "https://databayt.org/verification",
+  "/verification"
 ];
 
 /**
