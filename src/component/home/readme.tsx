@@ -125,9 +125,9 @@ const Readme = () => {
           </div>
 
           <div className=" p-2 py-3 px-6 mb-8 space-y-1 cursor-pointer tracking-wide">
-            <h5>1. Desgin</h5>
-            <h5>2. Database </h5>
-            <h5>3. Responsive</h5>
+            <h5>1. Desgin </h5>
+            <h5>2. Adope API </h5>
+            <h5>3. Responsive </h5>
             <h5>4. Notification </h5>
           </div>
         </div>

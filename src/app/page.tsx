@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
     {modal.open && modal.id === null && <Modal content={<Readme />} big = {true}/>}
-    <div className="flex flex-col items-center justify-center min-h-screen  text-start">
+    <div className="flex flex-col items-center justify-center min-h-screen space-y-1 text-start">
       <h1 className="text-3xl text-start pt-40">Databayt</h1>
       <Image 
       className="pb-6"
@@ -23,12 +23,12 @@ export default function Home() {
         <MdButton placeholder="Get started" />
       </LoginButton>
       
-      <p className="text-[14px] -mt-2 font-light tracking-wider text-start pt-40">
+      <p className="text-[14px]  font-light tracking-wider text-start pt-36">
         To <strong>contribute</strong>, you may track the ongoing development by reviewing the Design, Source
         Code, <br/>Discussion and Roadmap on Figma, GitHub, Discord, and
         Readme, respectively.
       </p>
-      <div className="flex gap-6 items-center mt-6">
+      <div className="flex gap-6 items-center pt-4">
         <MdIcon
           src="/contribute/figma.png"
           alt="Figma"
