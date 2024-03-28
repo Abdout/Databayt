@@ -8,7 +8,7 @@ const Burger = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden z-50">
       <div className="flex -m-3">
         <Hamburger size={20} distance="lg" toggled={open} toggle={setOpen} />
       </div>
