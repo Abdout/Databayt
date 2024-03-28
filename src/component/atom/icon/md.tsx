@@ -9,12 +9,14 @@ const MdIcon = (props: {
 }) => {
   return (
     <Link href={props.path}>
+      <div className="hover:opacity-90 transition-opacity duration-100">
         <Image
           src={props.src}
           width={50}
           height={50}
           alt={props.alt}
         />
+      </div>
     </Link>
   );
 };
