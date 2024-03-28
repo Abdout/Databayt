@@ -1,15 +1,10 @@
-import Image from 'next/image'
+"use client";
+
 
 export default function Home() {
   return (
-    <div>
+    <div className="justify-items-center">
       <h1>Home</h1>
-      <Image
-        src="/images/profile.jpg"
-        alt="Picture of the author"
-        width={500}
-        height={500}
-      />
     </div>
   )
 }

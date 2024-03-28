@@ -133,6 +133,7 @@ export const LoginForm = () => {
                           disabled={isPending}
                           placeholder="Password"
                           type="password"
+                          className="placeholder-opacity-50 placeholder-thin"
                         />
                       </FormControl>
                       <Button

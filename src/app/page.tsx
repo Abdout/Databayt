@@ -6,6 +6,7 @@ import Image from "next/image";
 import Modal from "@/component/atom/modal/modal";
 import { useModal } from "@/provider/modal";
 import Readme from "@/component/home/readme";
+import Header from "@/component/layout/header";
 
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         Readme, respectively.
       </p>
       <div className="flex gap-6 items-center pt-4">
+        <Header />
         <MdIcon
           src="/contribute/figma.png"
           alt="Figma"

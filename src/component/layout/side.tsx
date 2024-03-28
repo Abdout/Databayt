@@ -1,11 +1,11 @@
-import React from 'react'
-import Brand from './brand'
-import Item from './item'
-import Bottom from './bottom'
+import React from 'react';
+import Brand from './brand';
+import Item from './item';
+import Bottom from './bottom';
 
 const Side = () => {
   return (
-    <div className="fixed h-screen w-60 bg-gray-100 px-6">
+    <div className="hidden lg:block fixed h-screen w-60 bg-gray-100 px-6">
       <div className="pl-4 pt-6">
         <Brand />
       </div>
@@ -16,7 +16,7 @@ const Side = () => {
         <Bottom />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Side
+export default Side;
