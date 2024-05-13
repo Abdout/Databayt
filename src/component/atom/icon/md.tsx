@@ -12,8 +12,8 @@ const MdIcon = (props: {
       <div className="opacity-75 hover:opacity-100 transition-opacity duration-100">
         <Image
           src={props.src}
-          width={50}
-          height={50}
+          width={60}
+          height={60}
           alt={props.alt}
         />
       </div>

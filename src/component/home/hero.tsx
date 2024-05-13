@@ -3,7 +3,8 @@ import React from "react";
 import MdButton from "../atom/button/md";
 import Image from "next/image";
 import Lottie from 'lottie-react';
-import animationData from '../../animation/slow.json';
+import animationData from '../../../public/animation/slow.json';
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,9 +24,10 @@ const Hero = () => {
               <span>t</span>
             </h1>
             <p className="text-[28px] tracking-wider pt-2 pl-1 leading-[38px]"><strong>Automate</strong> the Boring, <br /> Elevate the Extraordinary.</p>
-            <div className="pr-[70px] pt-8 pl-1">
+            <Link href="/getstarted"
+              className="pr-[70px] pt-8 pl-1">
               <MdButton placeholder="Get started" />
-            </div>
+            </Link>
           </div>
           <div className="flex-col items-center justify-center hidden md:flex rounded-full w-[16rem] h-[16rem] bg-black relative">
             <Lottie animationData={animationData} style={{ width: 320, height: 320 }} />
