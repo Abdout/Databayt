@@ -32,20 +32,14 @@ const Readme = () => {
             <Block />
          
             <h2 className='pt-3'>Get in Touch 📬</h2>
-            <p>Have questions, feedback, or need assistance? Don't hesitate to reach out to us! We're here to help and support you throughout your contribution journey.</p>
-            <p>Email: info@databayt.org</p>
-            <p>Discord: Join our Discord community <Link className='text-blue-700'  href="your-slack-link">here</Link></p>
-
-            <h2 className='pt-3'>Contributing Guidelines 📝</h2>
-            <p>Before making contributions, please review our contributing guidelines. They outline our expectations, code standards, and best practices for submitting changes.</p>
-            <p><a href="your-contributing-guidelines-link">Link to Contributing Guidelines</a></p>
-
+            <p>Have questions, feedback, or need assistance? feel free to <Link className='text-blue-700'  href="your-slack-link">open an issue</Link> or reach out to us on <Link className='text-blue-700'  href="your-slack-link">Discord</Link> or <Link className='text-blue-700'  href="your-slack-link">Email</Link>. </p>
+            
             <h2 className='pt-3'>Code of Conduct 🤝</h2>
             <p>We maintain a code of conduct to ensure a welcoming and inclusive environment for all contributors. Please familiarize yourself with our code of conduct and adhere to its principles when interacting with our community.</p>
             <p><a href="your-code-of-conduct-link">Link to Code of Conduct</a></p>
 
             <h2 className='pt-3'>Thank You! 🙏</h2>
-            <p>Once again, thank you for your interest in contributing to our project. Together, we can make something truly amazing!</p>
+            <p>Once again, thank you for your interest in contributing to our project. Together, we can make something truly amazing</p>
         </div>
         </div>
     </div>
