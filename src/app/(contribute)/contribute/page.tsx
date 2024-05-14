@@ -20,7 +20,7 @@ const Contribute = () => {
           <MdIcon
             src="/contribute/github.png"
             alt="Github"
-            path="https://github.com/abdout/beta"
+            path="https://github.com/abdout/databayt"
           />
           <MdIcon
             src="/contribute/figma.png"

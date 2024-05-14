@@ -22,7 +22,7 @@ const Readme = () => {
             <Section
             title='Main Repository 🏠'
             body='Our main repository serves as the central hub for our project. This is where you will find the core codebase and contribute to its development.'
-            link='your-documentation-link'
+            link='https://github.com/abdout/databayt'
             label='Link to Main Repository ' 
             />
              <Section

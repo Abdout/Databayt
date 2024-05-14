@@ -20,7 +20,7 @@ const Atom = () => {
           <MdIcon
             src="/contribute/github.png"
             alt="Github"
-            path="https://github.com/abdout/beta"
+            path="https://github.com/abdout/databayt"
           />
           <MdIcon
             src="/contribute/figmab.png"
@@ -35,7 +35,7 @@ const Atom = () => {
           <MdIcon
             src="/contribute/link.png"
             alt="Live"
-            path="https://discord.gg/uPa4gGG62c"
+            path="/atom/live"
           />
         </div>
       </div>
