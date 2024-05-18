@@ -16,7 +16,7 @@ const Readme = () => {
             <Section
             title='Documentation 📚'
             body='Before diving into the code, make sure to check out our documentation. It provides detailed explanations of our project structure, guidelines, and how to contribute effectively.'
-            link='your-documentation-link'
+            link='/docs'
             label='Link to Documentation' 
             />
             <Section

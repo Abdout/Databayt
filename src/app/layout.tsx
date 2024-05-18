@@ -2,6 +2,7 @@ import React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
+import { Provider } from "@/component/live/provider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 const rubik = Rubik({ subsets: ["latin"], variable: "--rubik" });
@@ -17,6 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <Provider>
     <html lang="en">
       <body className={`${inter.variable} ${rubik.variable} overflow-x-hidden`}>
         <div className="w-full">
@@ -24,5 +26,6 @@ export default function RootLayout({
         </div>
       </body>
     </html>
+    </Provider>
   );
 }
