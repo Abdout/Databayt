@@ -2,7 +2,7 @@ import React from 'react'
 
 const Welcome = () => {
   return (
-    <div>Welcome to Atom's playground</div>
+    <div>Welcome to Atom playground</div>
   )
 }
 

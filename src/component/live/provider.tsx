@@ -8,7 +8,8 @@ interface ProviderProps {
 }
 
 export const Provider: React.FC<ProviderProps> = ({ children }) => {
-  const [selectedComponent, setSelectedComponent] = useState<string>('');
+  const defaultComponent = 'live/welcome';
+  const [selectedComponent, setSelectedComponent] = useState<string>(defaultComponent);
   const [componentConfig, setComponentConfig] = useState<ComponentConfig | null>(null);
   const [props, setProps] = useState<ComponentProps>({});
   const [activeProp, setActiveProp] = useState<string | null>(null);

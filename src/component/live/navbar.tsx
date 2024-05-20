@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
+    <div className="">
     <nav className="flex justify-center pt-1 absolute top-0 w-full z-50">
       <ul className="flex space-x-8 pt-4">
         {Object.entries(component).map(([category, items]) => (
@@ -36,8 +37,13 @@ const Navbar: React.FC = () => {
           />
         ))}
       </ul>
-      <Props activeSubItem={activeSubItem} />
+      
     </nav>
+    <Props activeSubItem={activeSubItem} />
+   
+
+    </div>
+    
   );
 };
 

@@ -2,7 +2,7 @@
 'use client';
 import React, { useContext, useState, useEffect } from 'react';
 import { ComponentContext } from './context';
-import Welcome from './welcome';
+import Welcome from '../reusable/atom/welcome';
 
 const ComponentRenderer: React.FC = () => {
   const { selectedComponent, props } = useContext(ComponentContext);
