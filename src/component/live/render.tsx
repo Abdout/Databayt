@@ -30,7 +30,7 @@ const ComponentRenderer: React.FC = () => {
 
   return(
     <div className='flex items-center justify-center h-screen'>
-       <Component {...props} />
+       <Component {...props as any} />
     </div>
    
   );

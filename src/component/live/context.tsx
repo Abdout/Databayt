@@ -1,3 +1,5 @@
+// context.tsx
+'use client';
 import React from 'react';
 import { ComponentConfig } from './try';
 
@@ -13,6 +15,8 @@ export interface ContextType {
   selectComponent: (componentName: string, newProps: ComponentProps) => void;
   activeProp: string | null;
   setActiveProp: (prop: string | null) => void;
+  activeSubItem: ComponentConfig | null; // Add activeSubItem property
+  setActiveSubItem: (item: ComponentConfig | null) => void; // Add setActiveSubItem method
 }
 
 export const ComponentContext = React.createContext<ContextType>({
@@ -22,4 +26,6 @@ export const ComponentContext = React.createContext<ContextType>({
   selectComponent: () => {},
   activeProp: null,
   setActiveProp: () => {},
+  activeSubItem: null, // Initialize activeSubItem
+  setActiveSubItem: () => {}, // Initialize setActiveSubItem
 });

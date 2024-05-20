@@ -1,3 +1,4 @@
+// Props.tsx
 import React, { useContext } from 'react';
 import { ComponentContext } from './context';
 import { ComponentConfig } from './try';
@@ -20,7 +21,7 @@ const Props: React.FC<PropsProps> = ({ activeSubItem }) => {
   return (
     <div className="flex flex-col space-y-4">
       {Object.entries(activeSubItem).map(([key, values]) => (
-        <div key={key}>
+        <div className='space-y-2' key={key}>
           <h4>{key}:</h4>
           <div className="flex space-x-4">
             {(values as string[]).map((value) => (
@@ -37,6 +38,12 @@ const Props: React.FC<PropsProps> = ({ activeSubItem }) => {
       ))}
     </div>
   );
+};
+
+export const PropsRenderer: React.FC = () => {
+  const { activeSubItem } = useContext(ComponentContext);
+
+  return activeSubItem ? <Props activeSubItem={activeSubItem} /> : null;
 };
 
 export default Props;
