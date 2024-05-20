@@ -1,37 +1,42 @@
-// // PropsComponent.tsx
-// 'use client';
-// import React, { useContext } from 'react';
-// import { ComponentContext } from './context';
-// import { componentProps } from './provider';
+import React, { useContext } from 'react';
+import { ComponentContext } from './context';
+import { ComponentConfig } from './try';
 
-// const PropsComponent: React.FC = () => {
-//   const { activeSubItem, activeProp, setActiveProp } = useContext(ComponentContext);
+interface PropsProps {
+  activeSubItem: ComponentConfig | null;
+}
 
-//   const handlePropClick = (prop: string) => {
-//     setActiveProp(activeProp === prop ? null : prop);
-//   }
+const Props: React.FC<PropsProps> = ({ activeSubItem }) => {
+  const { selectComponent, selectedComponent, props, setActiveProp, activeProp } = useContext(ComponentContext);
 
-//   return (
-//     <div className="flex justify-center items-center h-screen">
-//       {activeSubItem && componentProps[activeSubItem].map((prop: string, propIndex: number) => (
-//         <div
-//           key={propIndex}
-//           onClick={(e) => {
-//             e.stopPropagation();
-//             handlePropClick(prop);
-//           }}
-//           className="relative"
-//         >
-//           <div
-//             className={`flex items-center justify-between space-x-[50px] px-6 hover:bg-gray-200 p-2 w-full cursor-pointer ${activeProp === prop ? 'opacity-100 bg-gray-300 hover:bg-gray-300' : 'opacity-50'}`}
-//           >
-//             <h4 className='justify-start'>{prop}</h4>
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
+  if (!activeSubItem) return null;
 
-// export default PropsComponent;
+  const handlePropChange = (propName: string, value: string) => {
+    const newProps = { ...props, [propName]: value };
+    selectComponent(selectedComponent, newProps);
+    setActiveProp(value);
+  };
 
+  return (
+    <div className="flex flex-col space-y-4">
+      {Object.entries(activeSubItem).map(([key, values]) => (
+        <div key={key}>
+          <h4>{key}:</h4>
+          <div className="flex space-x-4">
+            {(values as string[]).map((value) => (
+              <button
+                key={value}
+                onClick={() => handlePropChange(key, value)}
+                className={`w-10 h-8 border-[1.5px] border-black  ${activeProp === value ? 'opacity-100' : 'opacity-50 hover:opacity-100'}`}
+              >
+                {value}
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Props;

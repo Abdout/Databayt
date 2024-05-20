@@ -26,7 +26,7 @@ export const atom: ComponentType[] = [
     // 'typography'
 ];
   
-export const compound: ComponentType[] = [
+export const pound: ComponentType[] = [
     // 'form', 
     // 'dropdown', 
     // 'autocomplete', 
