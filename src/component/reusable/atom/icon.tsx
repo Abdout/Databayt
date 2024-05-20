@@ -2,28 +2,31 @@ import React from 'react'
 import Image from 'next/image'
 
 export interface IconProps {
-  size?: 'lg' | 'md' | 'sm'
+  size?: 'xl' | 'lg' | 'md' | 'sm'
 }
 
 const Icon: React.FC<IconProps> = ({ size = 'lg' }) => {
   let dimension = 0;
   switch (size) {
+    case 'xl':
+      dimension = 100;
+      break;
     case 'lg':
-      dimension = 48;
+      dimension = 90;
       break;
     case 'md':
-      dimension = 32;
+      dimension = 60;
       break;
     case 'sm':
-      dimension = 16;
+      dimension = 30;
       break;
     default:
-      dimension = 48;
+      dimension = 60;
   }
 
   return (
     <Image
-      src="/contribute/github.png"
+      src="/circle.png"
       alt="Icon"
       width={dimension}
       height={dimension}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentConfig } from './try';
+import { ComponentConfig } from './component';
 
 interface DropdownProps {
   category: string;

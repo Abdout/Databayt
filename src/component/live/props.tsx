@@ -1,7 +1,7 @@
 // Props.tsx
 import React, { useContext } from 'react';
 import { ComponentContext } from './context';
-import { ComponentConfig } from './try';
+import { ComponentConfig } from './component';
 
 interface PropsProps {
   activeSubItem: ComponentConfig | null;
@@ -23,7 +23,7 @@ const Props: React.FC<PropsProps> = ({ activeSubItem }) => {
       {Object.entries(activeSubItem).map(([key, values]) => (
         <div className='space-y-2' key={key}>
           <h4>{key}:</h4>
-          <div className="flex space-x-4">
+          <div className="grid grid-cols-4 gap-4">
             {(values as string[]).map((value) => (
               <button
                 key={value}

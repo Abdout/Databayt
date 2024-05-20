@@ -3,7 +3,7 @@
 'use client';
 import React, { useState } from 'react';
 import { ComponentContext, ComponentProps, ContextType } from './context'; // Import ContextType
-import { component as componentData, ComponentConfig } from './try';
+import { component as componentData, ComponentConfig } from './component';
 
 interface ProviderProps {
   children: React.ReactNode;

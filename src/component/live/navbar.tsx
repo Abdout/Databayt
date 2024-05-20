@@ -4,7 +4,7 @@
 import React, { useContext, useState } from 'react';
 import { ComponentContext } from './context';
 import Dropdown from './dropdown';
-import { component, ComponentConfig } from './try';
+import { component, ComponentConfig } from './component';
 
 const Navbar: React.FC = () => {
   const [activeItem, setActiveItem] = useState<string | null>(null);

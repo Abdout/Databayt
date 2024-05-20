@@ -1,7 +1,7 @@
 // context.tsx
 'use client';
 import React from 'react';
-import { ComponentConfig } from './try';
+import { ComponentConfig } from './component';
 
 export interface ComponentProps {
   size?: string;
