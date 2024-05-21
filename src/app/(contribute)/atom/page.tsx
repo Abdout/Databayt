@@ -34,8 +34,8 @@ const Atom = () => {
           />
           <MdIcon
             src="/contribute/link.png"
-            alt="Live"
-            path="/atom/live"
+            alt="Playground"
+            path="/atom/playground"
           />
         </div>
       </div>
