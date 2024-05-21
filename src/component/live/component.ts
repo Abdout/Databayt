@@ -63,6 +63,10 @@ export const component: Components = {
       size: ['large', 'medium', 'small'],
       color: ['wh', 'bk'],
     },
+    accordion: {
+      size: ['large', 'medium', 'small'],
+      color: ['wh', 'bk'],
+    },
   },
   cell: {
     dashboard: {
