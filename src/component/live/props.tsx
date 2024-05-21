@@ -19,16 +19,16 @@ const Props: React.FC<PropsProps> = ({ activeSubItem }) => {
   };
 
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="flex flex-col space-y-4 ml-2 px-4">
       {Object.entries(activeSubItem).map(([key, values]) => (
         <div className='space-y-2' key={key}>
           <h4>{key}:</h4>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="flex flex-wrap justify-start">
             {(values as string[]).map((value) => (
               <button
                 key={value}
                 onClick={() => handlePropChange(key, value)}
-                className={`w-10 h-8 border-[1.5px] border-black  ${activeProp === value ? 'opacity-100' : 'opacity-50 hover:opacity-100'}`}
+                className={`border-[1.5px] border-black px-[10px] py-1 m-2  text-center ${activeProp === value ? 'opacity-100' : 'opacity-50 hover:opacity-100'} ${value.length === 1 ? 'w-10' : ''}`}
               >
                 {value}
               </button>

@@ -14,7 +14,8 @@ const Navbar: React.FC = () => {
     console.log(`handleItemClick called with group: ${group}, componentName: ${componentName}, item: ${JSON.stringify(item)}`);
     const defaultProps = { 
       size: item.size[0], 
-      color: item.color ? item.color[0] : undefined 
+      color: item.color ? item.color[0] : undefined,
+      type: item.type ? item.type[0] : undefined 
     };
     selectComponent(`${group}/${componentName}`, defaultProps);
     setActiveItem(null);

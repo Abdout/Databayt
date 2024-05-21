@@ -1,6 +1,7 @@
 export interface ComponentConfig {
   size: string[];
   color?: string[];
+  type?: string[];
 }
 
 interface ComponentCategory {
@@ -25,12 +26,35 @@ export const component: Components = {
       size: ['xl', 'lg', 'md', 'sm'],
       color: ['wh', 'bk'],
     },
-    typography: {
+    font: {
       size: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
       
     },
+    link: {
+      size: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
+      color: ['bl', 'bk'],
+      
+    },
+    radio: {
+      size: ['t', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
+      color: ['bl', 'bk'],
+      
+    },
+    check: {
+      size: ['t', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
+      color: ['bl', 'bk'],
+      
+    },
+    progress: {
+      size: ['t', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
+      type: ['bar', 'dot'],
+    },
   },
   pound: {
+    card: {
+      size: ['t', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
+      type: ['project', 'col'],
+    },
     form: {
       size: ['lg', 'md', 'sm'],
       color: ['wh', 'bk'],

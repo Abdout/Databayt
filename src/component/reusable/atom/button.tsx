@@ -12,9 +12,9 @@ export interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ size = 'lg', sm = false, md = false, lg = false }) => {
   const sizeClasses = {
-    lg: 'bg-black text-white w-60',
-    md: 'bg-yellow-400 text-black w-40',
-    sm: 'border-black w-20',
+    lg: 'bg-black text-[#fcfcfc] w-[310px] text-lg font-regualer tracking-wide',
+    md: 'bg-yellow-400 text-black w-48 text-md font-medium tracking-wide',
+    sm: 'border border-black w-20',
   };
 
   let sizeClass = sizeClasses[size];
@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({ size = 'lg', sm = false, md = false, lg
   if (lg) sizeClass += ' bg-blue-500';
 
   return (
-    <button className={`${sizeClass} h-12`}>
+    <button className={`${sizeClass} h-14  hover:opacity-80`}>
       Button
     </button>
   )

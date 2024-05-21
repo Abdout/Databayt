@@ -17,7 +17,7 @@ const Input: React.FC<InputProps> = ({ size = 'lg' }) => {
     <input
       type="text"
       placeholder="Label"
-      className={`border-[1.5px] ${widthClass} p-[14px] border-gray-400 hover:border-black outline-none rounded-none`}
+      className={`border-[1.5px] ${widthClass} p-[14px] border-gray-400 hover:border-black focus:border-black outline-none rounded-none`}
     />
   )
 }

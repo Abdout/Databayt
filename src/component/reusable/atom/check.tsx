@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Radio: React.FC = () => {
+const Check: React.FC = () => {
   const [checked, setChecked] = useState(false);
 
   const handleChange = () => {
@@ -11,19 +11,19 @@ const Radio: React.FC = () => {
     <div className="inline-block">
       <label className="flex items-center">
         <input
-          type="radio"
+          type="Checkbox"
           checked={checked}
           onChange={handleChange}
           className="hidden"
         />
         <span
-          className={`w-6 h-6 rounded-full border border-black flex items-center justify-center ${checked ? 'bg-black' : 'bg-white'}`}
+          className={`w-6 h-6 border border-black flex items-center justify-center ${checked ? 'bg-black' : 'bg-white'}`}
         >
-          {checked && <span className="w-3 h-3 rounded-full bg-white"></span>}
+          {checked && <span className="text-white text-lg">&#10003;</span>}
         </span>
       </label>
     </div>
   );
 };
 
-export default Radio;
+export default Check;
