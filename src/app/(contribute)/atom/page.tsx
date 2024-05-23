@@ -23,7 +23,7 @@ const Atom = () => {
             path="https://github.com/abdout/databayt"
           />
           <MdIcon
-            src="/contribute/figmab.png"
+            src="/contribute/figma.png"
             alt="Figma"
             path="https://www.figma.com/file/pAkG4vBJ7t6iZfsvumbRMI/Databayt?type=design&node-id=0%3A1&mode=design&t=EN4ApP1h6DVPiNFA-1"
           />
