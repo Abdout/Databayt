@@ -13,21 +13,10 @@ const Hero = () => {
       <div className="md:justify-start md:items-start w-full h-[18rem] md:h-[23rem] px-[120px] pt-10 bg-[#F1F1F1] items-center">
         <div className="md:flex md:justify-center md:items-center md:grid-2 md:gap-60">
           <div>
-            <Title title="Databayt" description="business automation" />
-            {/* <p className="text-[24px] pl-1 pb-2 font-light">business automation</p>
-            <h1 className="word-animation font-rubik md:text[120px] font-medium text-7xl">
-              <span>D</span>
-              <span>a</span>
-              <span>t</span>
-              <span>a</span>
-              <span>b</span>
-              <span>a</span>
-              <span>y</span>
-              <span>t</span>
-            </h1> */}
-            <p className="text-[28px] tracking-wider pt-1 pb-7  leading-[38px]"><strong>Automate</strong> the Boring, <br /> Elevate the Extraordinary.</p>
+            <Title title="Databayt" />
+            <p className="text-[28px] font-light tracking-wider pt-2 pb-7  leading-[38px]"><strong className="font-regular">Automate</strong> the Boring, <br /> Elevate the Extraordinary.</p>
             <Link href="/getstarted"
-              className="pr-[70px] mt-10 ">
+              className="pr-[70px] mt-14 ">
               <MdButton placeholder="Get started" />
             </Link>
           </div>
