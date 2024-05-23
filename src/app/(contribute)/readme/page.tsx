@@ -11,7 +11,7 @@ const Readme = () => {
       <Title title='Welcome, Contributors! 👋' />
         <div className='flex flex-col space-y-2 pt-6'>
             
-            <p>Thank you for considering contributing to our project! We greatly appreciate your interest and support. Below are some essential resources and information to help you get started:</p>
+            <p>Thank you for considering contributing to Databayt! We greatly appreciate your interest and support.<br/> Below are some essential resources and information to help you <strong>get started</strong>:</p>
 
             <Section
             title='Documentation 📚'

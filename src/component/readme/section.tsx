@@ -13,7 +13,7 @@ const Section = (props: {
             <h2 className='pt-3'>{props.title}</h2>
             <p>
                 {props.body}
-                {props.link && <Link href={props.link} className='text-blue-700'>{props.label}</Link>}
+                {props.link && <Link href={props.link} className='text-blue-700'> {props.label}</Link>}
             </p>
         </div>
     )
