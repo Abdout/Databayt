@@ -32,7 +32,7 @@ const Readme = () => {
             <Block />
          
             <h2 className='pt-3'>Get in Touch 📬</h2>
-            <p>Have questions, feedback, or need assistance? feel free to <Link className='text-blue-700'  href="your-slack-link">open an issue</Link> or reach out to us on <Link className='text-blue-700'  href="your-slack-link">Discord</Link> or <Link className='text-blue-700'  href="your-slack-link">Email</Link>. </p>
+            <p>Have questions, feedback, or need assistance? feel free to <Link className='text-blue-700'  href="https://github.com/abdout/databayt/issues">open an issue</Link> or reach out to us on <Link className='text-blue-700'  href="your-slack-link">Discord</Link> or <Link className='text-blue-700'  href="your-slack-link">Email</Link>. </p>
             
             <h2 className='pt-3'>Code of Conduct 🤝</h2>
             <p>We maintain a code of conduct to ensure a welcoming and inclusive environment for all contributors. Please familiarize yourself with our code of conduct and adhere to its principles when interacting with our community.</p>
