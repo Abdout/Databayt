@@ -18,7 +18,7 @@ function Modal({ content, big = false }: Props) {
   return (
     <>
       <button 
-      className="border border-gray-400 p-4"
+      className="border border-gray-400 p-4 hover:border-black"
       onClick={handleOpenModal}>Open Modal</button>
       {modal.open && (
         <div className="fixed inset-0 w-full h-screen z-50 flex justify-center items-center">
