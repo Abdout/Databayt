@@ -37,7 +37,7 @@ const DocsPage: React.FC = () => {
         <section id="introduction" className='space-y-2'>
           <h3>Introduction</h3>
           <p>
-            Databayt is paradigm shift in the realm of business automation. As an open-source, publicly traded entity, Databayt's mission is to empower businesses to streamline their operations by providing an innovative platform that facilitates the automation of diverse processes.
+            Databayt is paradigm shift in the realm of business automation. As an open-source, publicly traded entity, Databayt mission is to empower businesses to streamline their operations by providing an innovative platform that facilitates the automation of diverse processes.
             Built upon the vision of creating reusable components and tools, Databayt aims to deliver unparalleled flexibility and efficiency. By leveraging compact, independent building blocks, users can assemble sophisticated applications tailored to their unique needs. As these applications evolve over time, they morph into comprehensive, reusable blocks capable of servicing similar clients with minimal customization.
             Our approach is dynamic and forward-thinking. With each iteration, Databayt targets specific milestones, offering its services as Software as a Service (SaaS). Furthermore, our aspiration extends beyond mere service provision; we envision Databayt as a central hub for businesses seeking automation solutions. Through fostering a collaborative community, we aim to establish Databayt as the go-to destination for businesses looking to enhance productivity and competitiveness through automation.
           </p>
