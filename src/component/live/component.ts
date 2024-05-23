@@ -67,6 +67,10 @@ export const component: Components = {
       size: ['large', 'medium', 'small'],
       color: ['wh', 'bk'],
     },
+    modal: {
+      size: ['large', 'medium', 'small'],
+      color: ['wh', 'bk'],
+    },
   },
   cell: {
     dashboard: {

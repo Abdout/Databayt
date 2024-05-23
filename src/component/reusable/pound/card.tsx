@@ -1,3 +1,4 @@
+import Col from '@/component/card/col';
 import Project from '@/component/card/project'
 import React from 'react'
 
@@ -13,7 +14,7 @@ interface CardProps {
       } else if (type === 'col') {
         return (
           <div>
-            col
+            <Col />
           </div>
         );
       } else {
