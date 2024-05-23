@@ -1,14 +1,12 @@
 import React from 'react';
-import Head from 'next/head';
-import Title from '@/component/atom/databayt';
 
 const DocsPage: React.FC = () => {
   return (
     <div className="container mx-auto py-8 px-28">
       <h1 className="text-4xl font-rubik mb-2">Databayt</h1>
       <h2 className="text-2xl mb-6">Technical Record Document</h2>
-      <h2 className="text-xl font-bold mb-6">Table of Contents</h2>
-      <div className="flex flex-col md:flex-row">
+      <h2 className="text-xl font-bold mb-6 pl-[2px]">Table of Contents</h2>
+      <div className="flex flex-col md:flex-row pl-1">
         <div className="w-full md:w-1/3">
           <ul className="space-y-2">
             <li><a href="#introduction">Introduction</a></li>
