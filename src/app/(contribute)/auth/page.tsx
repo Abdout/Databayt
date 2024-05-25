@@ -35,7 +35,7 @@ const Auth = () => {
           <MdIcon
             src="/contribute/link.png"
             alt="Live"
-            path="https://discord.gg/uPa4gGG62c"
+            path="/auth/playground"
           />
         </div>
       </div>

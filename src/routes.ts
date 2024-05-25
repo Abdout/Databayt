@@ -7,6 +7,13 @@ export const publicRoutes = [
   "/",
   "/verification",
   "/readme",
+  "/atom",
+  "/auth",
+  "/contribute",
+  "/docs",
+  "/atom/playground",
+  "/auth/playground",
+  "/auth/puplic",
 ];
 
 /**

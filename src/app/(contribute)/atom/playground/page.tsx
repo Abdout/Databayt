@@ -7,7 +7,7 @@ import { PropsRenderer } from '@/component/live/props';
 import { ComponentContext } from '@/component/live/context';
 import Welcome from '@/component/reusable/atom/welcome';
 
-const Live: React.FC = () => {
+const Playground: React.FC = () => {
   const { selectedComponent } = useContext(ComponentContext);
 
   return (
@@ -31,4 +31,4 @@ const Live: React.FC = () => {
   );
 };
 
-export default Live;
+export default Playground;

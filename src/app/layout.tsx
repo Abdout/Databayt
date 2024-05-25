@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
 import { Provider } from "@/component/live/provider";
 import { MainProvider } from "@/component/reusable/logic/main";
+import { auth } from "@/auth";
+import { SessionProvider } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 const rubik = Rubik({ subsets: ["latin"], variable: "--rubik" });
@@ -13,13 +15,17 @@ export const metadata: Metadata = {
   description: "business automation",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  const session = await auth();
+
   return (
     <MainProvider>
+      <SessionProvider session={session}>
     <Provider>
     <html lang="en">
       <body className={`${inter.variable} ${rubik.variable} overflow-x-hidden`}>
@@ -29,6 +35,7 @@ export default function RootLayout({
       </body>
     </html>
     </Provider>
+    </SessionProvider>
     </MainProvider>
   );
 }
