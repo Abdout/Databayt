@@ -1,41 +1,39 @@
-import React from "react";
-import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Rubik } from "next/font/google";
-import { Provider } from "@/component/live/provider";
-import { MainProvider } from "@/component/reusable/logic/main";
-import { auth } from "@/auth";
+import { Rubik } from "next/font/google";
+import "./globals.css";
+import { ModalProvider } from "@/components/modal/context";
+import { UploadProvider } from "@/components/upload/context";
+import { ThemeProvider } from "@/components/theme/provider";
 import { SessionProvider } from "next-auth/react";
+import { auth } from "@/auth";
 
-const inter = Inter({ subsets: ["latin"], variable: "--inter" });
-const rubik = Rubik({ subsets: ["latin"], variable: "--rubik" });
+const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Databayt",
-  description: "business automation",
+  title: "الحركة الوطنية",
+  description: "الحركة الوطنية للبناء والتنمية - المجتمع اولا",
 };
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
 
   return (
-    <MainProvider>
-      <SessionProvider session={session}>
-    <Provider>
-    <html lang="en">
-      <body className={`${inter.variable} ${rubik.variable} overflow-x-hidden`}>
-        <div className="w-full">
-          {children}  
-        </div>
-      </body>
-    </html>
-    </Provider>
+    <SessionProvider session={session}>
+      <html lang="en">
+        <body className={rubik.className} dir="rtl">
+          <div className="container">
+            <div className="wrapper">
+              <ModalProvider>
+                <UploadProvider>
+                  <ThemeProvider>
+                    {children}
+                  </ThemeProvider>
+                </UploadProvider>
+              </ModalProvider>
+            </div>
+          </div>
+        </body>
+      </html>
     </SessionProvider>
-    </MainProvider>
   );
 }

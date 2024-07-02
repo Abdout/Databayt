@@ -1,100 +1,285 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-html {
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
   width: 100%;
   height: 100%;
   background-color: #fcfcfc;
-  /* padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px; */
+  overflow-x: hidden;
+ 
 
   
 }
 
-.font-rubik {
+.rubik {
   font-family: var(--rubik);
 }
 
-h1 {
-  font-size: 22px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
+  @layer base {
+    :root {
+      --background: 252 0% 99%;
+      --foreground: 224 71.4% 4.1%;
 
-h2 {
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
+      --card: 0 0% 100%;
+      --card-foreground: 224 71.4% 4.1%;
 
-@keyframes flow {
-  0% {
-    transform: translateX(0);
+      --popover: 0 0% 100%;
+      --popover-foreground: 224 71.4% 4.1%;
+
+      --primary: 220.9 39.3% 11%;
+      --primary-foreground: 210 20% 98%;
+
+      --secondary: 220 14.3% 95.9%;
+      --secondary-foreground: 220.9 39.3% 11%;
+
+      --muted: 220 14.3% 95.9%;
+      --muted-foreground: 220 8.9% 46.1%;
+
+      --accent: 220 14.3% 95.9%;
+      --accent-foreground: 220.9 39.3% 11%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 20% 98%;
+
+      --border: 220 13% 91%;
+      --input: 220 13% 91%;
+      --ring: 224 71.4% 4.1%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 224 71.4% 4.1%;
+      --foreground: 210 20% 98%;
+
+      --card: 224 71.4% 4.1%;
+      --card-foreground: 210 20% 98%;
+
+      --popover: 224 71.4% 4.1%;
+      --popover-foreground: 210 20% 98%;
+
+      --primary: 210 20% 98%;
+      --primary-foreground: 220.9 39.3% 11%;
+
+      --secondary: 215 27.9% 16.9%;
+      --secondary-foreground: 210 20% 98%;
+
+      --muted: 215 27.9% 16.9%;
+      --muted-foreground: 217.9 10.6% 64.9%;
+
+      --accent: 215 27.9% 16.9%;
+      --accent-foreground: 210 20% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 20% 98%;
+
+      --border: 215 27.9% 16.9%;
+      --input: 215 27.9% 16.9%;
+      --ring: 216 12.2% 83.9%;
+    }
   }
-  100% {
-    transform: translateX(-50%);
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+
+  .container {
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--textColor);
+  }
+  
+  .wrapper {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  @media screen and (max-width: 1536px) {
+    .wrapper {
+      max-width: 1366px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .wrapper {
+      max-width: 1024px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      max-width: 768px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      max-width: 640px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .wrapper {
+      max-width: 475px;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+   
+  }
+  
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+   
+  }
+  
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  h5 {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  
+  h6 {
+    font-size: 16px;
+    font-weight: 500;
+   
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .reveal {
+    opacity: 0.7;
+  }
+  
+  .reveal:hover {
+    opacity: 1;
+  }
+
+  .reveal-less {
+    opacity: 0.8;
+  }
+  
+  .reveal-less:hover {
+    opacity: 1;
+  }
+@layer components {
+  .border-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Adjusted Initial State for Horizontal Borders */
+  .group .border-animation::before,
+  .group .border-animation::after {
+    content: '';
+    position: absolute;
+    height: 2px; /* Height of the border */
+    background: black; /* Color of the border */
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .group .border-animation::before {
+    top: 0;
+    left: 0;
+  }
+
+  .group .border-animation::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  /* Adjusted Initial State for Vertical Borders */
+  .group .border-animation span::before,
+  .group .border-animation span::after {
+    content: '';
+    position: absolute;
+    width: 2px; /* Width of the border */
+    background: black; /* Color of the border */
+    height: 0;
+    transition: height 0.5s ease-in-out;
+  }
+
+  .group .border-animation span::before {
+    top: 0;
+    left: 0;
+  }
+
+  .group .border-animation span::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  /* Adjusted Hover Effects */
+  .group:hover .border-animation::before {
+    width: 10%;
+    left: 0; /* Expand from the top-left corner to the right */
+  }
+
+  .group:hover .border-animation::after {
+    width: 10%;
+    right: 0; /* Expand from the bottom-right corner to the left */
+  }
+  .group:hover .border-animation::before {
+    width: 10%;
+    top: 0; /* Expand from the top-left corner to the right */
+  }
+
+  .group:hover .border-animation::after {
+    width: 10%;
+    bottom: 0; /* Expand from the bottom-right corner to the left */
+  }
+
+  .group:hover .border-animation span::before {
+    height: 10%;
+    top: 0; /* Expand from the top-left corner downwards */
+  }
+
+  .group:hover .border-animation span::after {
+    height: 10%;
+    left: 0; /* Expand from the bottom-right corner upwards */
+  }
+  .group:hover .border-animation span::before {
+    height: 10%;
+    top: 0; /* Expand from the top-left corner downwards */
+  }
+
+  .group:hover .border-animation span::after {
+    height: 10%;
+    right: 0; /* Expand from the bottom-right corner upwards */
   }
 }
-
-.animate-flow {
-  display: flex;
-  width: 200%; /* Adjust according to your needs */
-  animation: flow 30s linear infinite;
-}
-
-.animate-flow:hover {
-  animation-play-state: paused;
-}
-
-.icon-set {
-  display: flex;
-  width: 50%; /* Adjust according to your needs */
-  justify-content: space-between;
-}
-
-h3 {
-  font-size: 19px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-
-h4 {
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-
-h5 {
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-
-h6 {
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: 100;
-}
-
-p {
-  font-size: 15px;
-}
-
-strong {
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.placeholder::placeholder {
-  color: #999;
-  opacity: 0.7;
-  font-weight: 300;
-  letter-spacing: 0.025em;
-}
-
 
 @keyframes letter-animation {
   0% { opacity: 1; }
@@ -121,3 +306,7 @@ strong {
 .word-animation span:nth-child(4) { --i: 4; }
 .word-animation span:nth-child(5) { --i: 5; }
 .word-animation span:nth-child(6) { --i: 6; }
+
+.rubik {
+  font-family: var(--rubik);
+}

@@ -1,16 +1,13 @@
-
-import Footer from "@/component/layout/footer";
-import Header from "@/component/layout/header";
-import React from "react";
+import React from 'react'
 
 const Community = () => {
   return (
-    <div className="space-y-4">
-      <Header />
-      <Footer />
-      
+    <div>
+        <h1>المجتمع</h1>
+        <p>عند هاتيك القرى عند المدائن</p>
+        
     </div>
-  );
-};
+  )
+}
 
-export default Community;
+export default Community

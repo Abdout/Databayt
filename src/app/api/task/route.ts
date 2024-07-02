@@ -1,13 +1,37 @@
-import connectDB from "@/model/connect/db";
-import Task from "@/model/task/task";
+import connectDB from "@/lib/db";
+import Task from "@/components/platform/task/model";
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
 
 export async function POST(request: NextRequest) {
-  const { title, team, location, date, status, priority, estTime, project } = await request.json() as { title: string, team: string[], location: string, date: Date, status: string, priority: string, estTime: string, project: string };
-  console.log({ title, team, location, date, status, priority, estTime, project });
+  const { title, club, skill, team, status, priority, duration, remark } = await request.json() as { 
+    title: string, 
+    club: string, 
+    skill: string[], 
+    team: string[],
+    status: string,
+    priority: string,
+    duration: number,
+    remark: string
+  };
+
+  console.log({ title, club, skill, team, status, priority, duration, remark });
+  
   await connectDB();
-  await Task.create({ title, team, location, date, status, priority, estTime, project });
+  
+  const task = new Task({
+    title,
+    club,
+    skill,
+    team,
+    status,
+    priority,
+    duration,
+    remark
+  });
+  
+  await task.save();
+  
   return NextResponse.json({ message: "Task Created" }, { status: 201 });
 }
 

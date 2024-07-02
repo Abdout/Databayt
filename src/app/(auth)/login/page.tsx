@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { LoginForm } from "@/component/auth/login-form";
+import { LoginForm } from "@/components/auth/login-form";
 
 const LoginPage = () => {
   return (

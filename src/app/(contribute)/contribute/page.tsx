@@ -1,37 +1,54 @@
-import Databayt from '@/component/atom/databayt'
-import MdIcon from '@/component/atom/icon/md'
+import Databayt from '@/components/atom/databayt'
 import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Contribute = () => {
   return (
-    <div className='flex flex-col space-y-4 items-center justify-center h-screen overflow-hidden'>
+    <div className='flex flex-col  items-center justify-center h-screen overflow-hidden' dir='ltr'>
       <div className='flex flex-col items-start justify-start -mt-10'>
-        <Databayt title='Databayt' description='Contributors' />
-        <p className="text-[18px] font-light tracking-wider pl-1 py-4">
+        <Databayt title='NMBD' description='Contributors' />
+        <p className="text-[18px] font-light tracking-wider pl-1 pb-4 ">
           To <strong>contribute</strong>, you may track the ongoing development by<br/>reviewing the Readme,
           Code, Design and Discussion respectively.
         </p>
-        <div className="flex gap-6 pt-6 items-start">
-          <MdIcon
+        <div className="flex gap-6 items-start">
+          <Link href="/readme">
+          <Image
             src="/contribute/readme.png"
             alt="Readme"
-            path="/readme"
+            width={70}
+            height={70}
+            className='reveal-less'
           />
-          <MdIcon
+          </Link>
+         <Link href="https://github.com/abdout/nmbd">
+         <Image
             src="/contribute/github.png"
             alt="Github"
-            path="https://github.com/abdout/databayt"
+            width={70}
+            height={70}
+            className='reveal-less'
           />
-          <MdIcon
+          </Link>
+          <Link href="https://www.figma.com/design/lNRkXcxd6EWe09goW2IMcn/nmbd?node-id=21-6&t=C9lVZynpKdkcNKZH-0">
+          <Image
             src="/contribute/figma.png"
             alt="Figma"
-            path="https://www.figma.com/file/pAkG4vBJ7t6iZfsvumbRMI/Databayt?type=design&node-id=0%3A1&mode=design&t=EN4ApP1h6DVPiNFA-1"
+            width={70}
+            height={70}
+            className='reveal-less'
           />
-          <MdIcon
+          </Link>
+          <Link href="/readme">
+          <Image
             src="/contribute/discord.png"
             alt="Discord"
-            path="https://discord.gg/uPa4gGG62c"
+            width={70}
+            height={70}
+            className='reveal-less'
           />
+          </Link>
         </div>
       </div>
     </div>

@@ -1,21 +1,22 @@
-import React from "react";
-import Hero from "@/component/home/hero";
-import Sponser from "@/component/home/sponsor";
-import Contributor from "@/component/home/contributor";
-import Service from "@/component/home/service";
-import Client from "@/component/home/client";
-import Contribute from "@/component/home/contribute";
-
+import RecentArticles from "@/components/root/article/recent";
+import Contact from "@/components/root/contact/ui";
+import Event from "@/components/root/event/event";
+import Hero from "@/components/root/hero/ui";
+import Paper from "@/components/root/paper/ui";
+import Media from "@/components/root/video/ui";
+import "@theme-toggles/react/css/DarkSide.css";
 
 export default function Home() {
   return (
-    <div className="text-sm space-y-4">
+    <>
       <Hero />
-      <Service />
-      <Client />
-      <Contribute />
-      <Contributor />
-      <Sponser />
-    </div>
+      <div className="space-y-10">
+        <Paper />
+        <Media />
+        <RecentArticles />
+        <Event />
+        <Contact />
+      </div>
+    </>
   );
 }
