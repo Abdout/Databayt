@@ -5,7 +5,7 @@ import * as z from "zod";
 import { NewPasswordSchema } from "@/schemas";
 import { getPasswordResetTokenByToken } from "@/data/password-reset-token";
 import { getUserByEmail } from "@/data/user";
-import { db } from "@/lib/db";
+import { db } from "@/lib/prisma";
 
 export const newPassword = async (
   values: z.infer<typeof NewPasswordSchema>,

@@ -1,6 +1,6 @@
 "use server";
 
-import { db } from "@/lib/db";
+import { db } from "@/lib/prisma";
 import { getUserByEmail } from "@/data/user";
 import { getVerificationTokenByToken } from "@/data/verificiation-token";
 

@@ -1,7 +1,7 @@
 import crypto from "crypto";
 import { v4 as uuidv4 } from "uuid";
 
-import { db } from "@/lib/db";
+import { db } from "@/lib/prisma";
 import { getVerificationTokenByEmail } from "@/data/verificiation-token";
 import { getPasswordResetTokenByEmail } from "@/data/password-reset-token";
 import { getTwoFactorTokenByEmail } from "@/data/two-factor-token";
