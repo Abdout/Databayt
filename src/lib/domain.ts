@@ -1,1 +1,1 @@
-export const domain = "https://nmbd.databayt.org"
+export const domain = "https://databayt.org"
